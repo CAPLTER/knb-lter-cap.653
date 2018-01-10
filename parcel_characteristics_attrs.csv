@@ -1,0 +1,57 @@
+attributeName,formatString,unit,numberType,definition,attributeDefinition,columnClasses,minimum,maximum,missingValueCode,missingValueCodeExplanation
+sample_date,YYYY-MM-DD,,,,survey date,Date,,,,
+site_code,,,,location code,location code,character,,,,
+parcel_survey_type,,,,,indicating the yard (front or back of the residence) where the survey was conducted,factor,,,,
+parcel_residence_type,,,,type of residence,type of residence,character,,,NA,missing value
+parcel_social_class,,,,,approximate (perceived) social class of the surrounding area,factor,,,NA,missing value
+parcel_appearance,,,,,general appearance of the yard,factor,,,,
+parcel_orderliness,,,,,"yard orderliness (placement of plants, riverbed, etc.)",factor,,,NA,missing value
+presence_of_bird_feeder,,,,,presence of a bird feeder,factor,,,,
+presence_of_water_feature,,,,,presence of a water feature,factor,,,,
+presence_of_porch_patio,,,,,presence of a porch or patio,factor,,,,
+presence_of_cats,,,,,presence of a cat,factor,,,,
+presence_of_dogs,,,,,presence of a dog,factor,,,,
+presence_of_pet_waste,,,,,presence of pet waste,factor,,,,
+presence_of_statues,,,,,presence of a bird feeder,factor,,,,
+presence_of_flagpole,,,,,presence of a flag pole,factor,,,,
+presence_of_cars_yard,,,,,presence of cars in the yard,factor,,,,
+presence_of_potted_plant,,,,,presence of a potted plant(s),factor,,,,
+presence_of_play_equip,,,,,presence of play equipment,factor,,,,
+presence_of_lawn_ornaments,,,,,presence of lawn ornament(s),factor,,,,
+presence_of_furniture,,,,,"presence of furniture (chairs, tables)",factor,,,,
+presence_of_river_bed,,,,,presence of a landscaped rock river,factor,,,,
+presence_of_yard_topography,,,,,created yard topography,factor,,,,
+presence_of_litter,,,,,presence of litter (refuse on ground),factor,,,,
+presence_of_veg_litter,,,,,"presence of vegetation litter (leaves, etc.)",factor,,,,
+presence_of_yard_tools,,,,,presence of yard tools,factor,,,,
+presence_of_light_post,,,,,presence of a light post,factor,,,,
+presence_of_other,,,,,presence of other,factor,,,,
+presence_of_irrigation_flood,,,,,indication of flood irrigation,factor,,,,
+presence_of_irrigation_drip,,,,,indication of drip irrigation,factor,,,,
+presence_of_irrigation_hose,,,,,indication of hose irrigation,factor,,,,
+presence_of_irrigation_sprinklers,,,,,indication of sprinkler irrigation,factor,,,,
+landscape_type,,,,,landscape type,factor,,,,
+amount_grass,,,,,amount of yard covered by grass,factor,,,NA,missing value
+weed_quantity_mesic,,,,,density of weeds in the grassy area,factor,,,NA,missing value
+weed_quantity_xeric,,,,,density of weeds in the non-grassy area,factor,,,,
+presence_of_weeds_other,,,,,"are there weeds in other area of the yard (e.g. flower beds, driveway, etc.)",factor,,,,
+parcel_pruning_trees,,,,,"indication of pruning trees (e.g., cut branches)",factor,,,,
+parcel_pruning_shrubs,,,,,"indication of pruning shrubs (e.g., shaped shrubs)",factor,,,NA,missing value
+parcel_grass_patchiness,,,,,patchiness of grass,factor,,,NA,missing value
+parcel_percent_living_grass,,dimensionless,whole,,estimated area (as percent) of living grass in grassy area of yard,numeric,0,100,NA,missing value
+parcel_percent_bare,,dimensionless,whole,,estimated area (as percent) of bare ground in grassy area of yard,numeric,0,90,NA,missing value
+parcel_percent_dead,,dimensionless,whole,,estimated area (as percent) of dead grass in grassy area of yard,numeric,0,90,NA,missing value
+parcel_percent_weeds,,dimensionless,whole,,estimated area (as percent) of weeds in grassy area of yard,numeric,0,10100,NA,missing value
+parcel_percent_other,,dimensionless,whole,,estimated area (as percent) of other in grassy area of yard,numeric,0,70,NA,missing value
+parcel_percent_no_stress,,dimensionless,whole,,percent of living grass in grassy area of yard that is very green (no stress),numeric,0,1003333,NA,missing value
+parcel_percent_little_stress,,dimensionless,whole,,percent of living grass in grassy area of yard that is moderately green (little stress),numeric,0,1005,NA,missing value
+parcel_percent_some_stress,,dimensionless,whole,,percent of living grass in grassy area of yard that is greenish-yellow (some stress),numeric,0,100,NA,missing value
+parcel_percent_moderate_stress,,dimensionless,whole,,percent of living grass in grassy area of yard that is yellowish (moderate stress),numeric,0,100,NA,missing value
+parcel_percent_severe_stress,,dimensionless,whole,,percent of living grass in grassy area of yard that is brownish (severe stress),numeric,0,50,NA,missing value
+lawn_health,,,,,overall lawn health and color,factor,,,NA,missing value
+lawn_quality,,,,,overall lawn quality,factor,,,NA,missing value
+presence_of_lawn_trimmed,,,,,are the lawn edges trimmed?,factor,,,NA,missing value
+presence_of_recent_cut,,,,,was the lawn recently mowed?,factor,,,NA,missing value
+parcel_grass_height,,centimeter,whole,,height of grass,numeric,0,30,NA,missing value
+parcel_weed_height,,centimeter,whole,,height of weeds,numeric,0,80,NA,missing value
+parcel_feature_comments,,,,general observations or comments,general observations or comments,character,,,NA,missing value

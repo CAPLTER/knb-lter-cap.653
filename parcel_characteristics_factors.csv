@@ -1,0 +1,112 @@
+attributeName,code,definition
+parcel_survey_type,back,back
+parcel_survey_type,front,front
+parcel_social_class,rich,rich
+parcel_social_class,upper middle,upper middle
+parcel_social_class,upper middle class,upper middle class
+parcel_social_class,working lower,working lower
+parcel_social_class,working lower class,working lower class
+parcel_appearance,good,good
+parcel_appearance,poor,poor
+parcel_appearance,professionally or well maintained,professionally or well maintained
+parcel_orderliness,highly structured or designed,highly structured or designed
+parcel_orderliness,lacking order or structure,lacking order or structure
+parcel_orderliness,medium,medium
+presence_of_bird_feeder,FALSE,FALSE
+presence_of_bird_feeder,TRUE,TRUE
+presence_of_water_feature,FALSE,FALSE
+presence_of_water_feature,TRUE,TRUE
+presence_of_porch_patio,FALSE,FALSE
+presence_of_porch_patio,TRUE,TRUE
+presence_of_cats,FALSE,FALSE
+presence_of_cats,TRUE,TRUE
+presence_of_dogs,FALSE,FALSE
+presence_of_dogs,TRUE,TRUE
+presence_of_pet_waste,FALSE,FALSE
+presence_of_pet_waste,TRUE,TRUE
+presence_of_statues,FALSE,FALSE
+presence_of_statues,TRUE,TRUE
+presence_of_flagpole,FALSE,FALSE
+presence_of_flagpole,TRUE,TRUE
+presence_of_cars_yard,FALSE,FALSE
+presence_of_cars_yard,TRUE,TRUE
+presence_of_potted_plant,FALSE,FALSE
+presence_of_potted_plant,TRUE,TRUE
+presence_of_play_equip,FALSE,FALSE
+presence_of_play_equip,TRUE,TRUE
+presence_of_lawn_ornaments,FALSE,FALSE
+presence_of_lawn_ornaments,TRUE,TRUE
+presence_of_furniture,FALSE,FALSE
+presence_of_furniture,TRUE,TRUE
+presence_of_river_bed,FALSE,FALSE
+presence_of_river_bed,TRUE,TRUE
+presence_of_yard_topography,FALSE,FALSE
+presence_of_yard_topography,TRUE,TRUE
+presence_of_litter,FALSE,FALSE
+presence_of_litter,TRUE,TRUE
+presence_of_veg_litter,FALSE,FALSE
+presence_of_veg_litter,TRUE,TRUE
+presence_of_yard_tools,FALSE,FALSE
+presence_of_yard_tools,TRUE,TRUE
+presence_of_light_post,FALSE,FALSE
+presence_of_light_post,TRUE,TRUE
+presence_of_other,FALSE,FALSE
+presence_of_other,TRUE,TRUE
+presence_of_irrigation_flood,FALSE,FALSE
+presence_of_irrigation_flood,TRUE,TRUE
+presence_of_irrigation_drip,FALSE,FALSE
+presence_of_irrigation_drip,TRUE,TRUE
+presence_of_irrigation_hose,FALSE,FALSE
+presence_of_irrigation_hose,TRUE,TRUE
+presence_of_irrigation_sprinklers,FALSE,FALSE
+presence_of_irrigation_sprinklers,TRUE,TRUE
+landscape_type,mesic,mesic
+landscape_type,mixed,mixed
+landscape_type,patio,patio
+landscape_type,xeric,xeric
+amount_grass,about half,about half
+amount_grass,all or mostly grass,all or mostly grass
+amount_grass,less than half,less than half
+amount_grass,more than half,more than half
+amount_grass,none,none
+weed_quantity_mesic,few,few
+weed_quantity_mesic,infestation,infestation
+weed_quantity_mesic,many,many
+weed_quantity_mesic,medium,medium
+weed_quantity_mesic,no grass,no grass
+weed_quantity_mesic,no weeds,no weeds
+weed_quantity_xeric,few,few
+weed_quantity_xeric,infestation,infestation
+weed_quantity_xeric,many,many
+weed_quantity_xeric,medium,medium
+weed_quantity_xeric,no grass,no grass
+weed_quantity_xeric,no weeds,no weeds
+presence_of_weeds_other,FALSE,FALSE
+presence_of_weeds_other,TRUE,TRUE
+parcel_pruning_trees,no,no
+parcel_pruning_trees,no specimen,no specimen
+parcel_pruning_trees,yes,yes
+parcel_pruning_shrubs,no,no
+parcel_pruning_shrubs,no specimen,no specimen
+parcel_pruning_shrubs,yes,yes
+parcel_grass_patchiness,even grass,even grass
+parcel_grass_patchiness,patches,patches
+lawn_health,little stress,little stress
+lawn_health,moderate stress,moderate stress
+lawn_health,no stress,no stress
+lawn_health,severe stress,severe stress
+lawn_health,some stress,some stress
+lawn_quality,between moderately green and overall yellow,between moderately green and overall yellow
+lawn_quality,between monoculture and mostly monoculture,between monoculture and mostly monoculture
+lawn_quality,between mostly monoculture and moderately green,between mostly monoculture and moderately green
+lawn_quality,between overall yellow and very patchy but closer to overall yellow,between overall yellow and very patchy but closer to overall yellow
+lawn_quality,between overall yellow and very patchy but closer to patchy and overall brown,between overall yellow and very patchy but closer to patchy and overall brown
+lawn_quality,"mixed species (grass & weeds), evenly distributed, overall moderately green","mixed species (grass & weeds), evenly distributed, overall moderately green"
+lawn_quality,"mixed species (grass & weeds), patchy, overall yellow yard","mixed species (grass & weeds), patchy, overall yellow yard"
+lawn_quality,"monoculture (no patches, no weeds), dense, very green grass (like golf course)","monoculture (no patches, no weeds), dense, very green grass (like golf course)"
+lawn_quality,"mostly monoculture (few weeds), overall greenish-yellow yard","mostly monoculture (few weeds), overall greenish-yellow yard"
+lawn_quality,very patchy (dead grass & weeds + bare ground) overall brown color,very patchy (dead grass & weeds + bare ground) overall brown color
+presence_of_lawn_trimmed,FALSE,FALSE
+presence_of_lawn_trimmed,TRUE,TRUE
+presence_of_recent_cut,FALSE,FALSE
+presence_of_recent_cut,TRUE,TRUE

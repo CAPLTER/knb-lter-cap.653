@@ -1,0 +1,23 @@
+attributeName,code,definition
+human_presence_of_path,FALSE,FALSE
+human_footprints,many,many
+human_footprints,none,none
+human_footprints,some,some
+human_bike_tracks,none,none
+human_off_road_vehicle,none,none
+human_off_road_vehicle,some,some
+human_small_litter,none,none
+human_small_litter,some,some
+human_dumped_trash_bags,none,none
+human_abandoned_vehicles,none,none
+human_graffiti,none,none
+human_injured_plants,none,none
+human_informal_play,none,none
+human_informal_play,some,some
+human_informal_recreation,none,none
+human_informal_living,none,none
+human_sports_equipment,none,none
+human_sports_equipment,some,some
+human_social_class,rich,rich
+human_social_class,upper middle class,upper middle class
+human_social_class,working lower class,working lower class
