@@ -545,8 +545,9 @@ geographicDescription <- "CAP LTER study area"
 coverage <- set_coverage(begin = begindate,
                          end = enddate,
                          geographicDescription = geographicDescription,
-                         west = -111.949, east = -111.910,
-                         north = +33.437, south = +33.430)
+                         west = -112.783, east = -111.579,
+                         north = +33.8267, south = +33.2186)
+
 
 # see esca_taxonomic_coverage.R in this repo for taxonomic coverage
 coverage@taxonomicCoverage <- c(escaTaxa)
