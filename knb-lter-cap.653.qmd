@@ -1,0 +1,388 @@
+## setup
+
+```{r}
+#| eval: true
+#| label: capeml
+
+devtools::load_all("~/localRepos/capeml/")
+```
+
+```{r}
+#| eval: true
+#| label: connection
+
+source("~/Documents/localSettings/pg_local.R")
+pg <- pg_local_connect("caplter")
+```
+
+```{r}
+#| eval: true
+#| label: queries
+
+source("esca_sql_queries.R")
+```
+
+
+## parcel characteristics
+
+```{r}
+#| eval: true
+#| label: parcel_characteristics 
+
+parcel_characteristics <- get_parcel_characteristics('parcel')
+
+parcel_characteristics <- parcel_characteristics |>
+  dplyr::mutate(
+    parcel_survey_type                = as.factor(parcel_survey_type),
+    # parcel_residence_type           = gsub("single_family", "single family", parcel_residence_type),
+    # parcel_residence_type           = gsub("single familiy", "single family", parcel_residence_type),
+    parcel_social_class               = as.factor(parcel_social_class),
+    # parcel_appearance               = gsub("neigh_yard_upkeep_good", "good", parcel_appearance),
+    # parcel_appearance               = gsub("neigh_yard_upkeep_poor", "poor", parcel_appearance),
+    parcel_appearance                 = as.factor(parcel_appearance),
+    # parcel_orderliness              = gsub("lacking_order_structure", "lacking order or structure", parcel_orderliness),
+    # parcel_orderliness              = gsub("highly_structured_designed", "highly structured or designed", parcel_orderliness),
+    parcel_orderliness                = as.factor(parcel_orderliness),
+    presence_of_bird_feeder           = as.factor(presence_of_bird_feeder),
+    presence_of_water_feature         = as.factor(presence_of_water_feature),
+    presence_of_porch_patio           = as.factor(presence_of_porch_patio),
+    presence_of_cats                  = as.factor(presence_of_cats),
+    presence_of_dogs                  = as.factor(presence_of_dogs),
+    presence_of_pet_waste             = as.factor(presence_of_pet_waste),
+    presence_of_statues               = as.factor(presence_of_statues),
+    presence_of_flagpole              = as.factor(presence_of_flagpole),
+    presence_of_cars_yard             = as.factor(presence_of_cars_yard),
+    presence_of_potted_plant          = as.factor(presence_of_potted_plant),
+    presence_of_play_equip            = as.factor(presence_of_play_equip),
+    presence_of_lawn_ornaments        = as.factor(presence_of_lawn_ornaments),
+    presence_of_furniture             = as.factor(presence_of_furniture),
+    presence_of_river_bed             = as.factor(presence_of_river_bed),
+    presence_of_yard_topography       = as.factor(presence_of_yard_topography),
+    presence_of_litter                = as.factor(presence_of_litter),
+    presence_of_veg_litter            = as.factor(presence_of_veg_litter),
+    presence_of_yard_tools            = as.factor(presence_of_yard_tools),
+    presence_of_light_post            = as.factor(presence_of_light_post),
+    presence_of_other                 = as.factor(presence_of_other),
+    presence_of_irrigation_flood      = as.factor(presence_of_irrigation_flood),
+    presence_of_irrigation_drip       = as.factor(presence_of_irrigation_drip),
+    presence_of_irrigation_hose       = as.factor(presence_of_irrigation_hose),
+    presence_of_irrigation_sprinklers = as.factor(presence_of_irrigation_sprinklers),
+    landscape_type                    = as.factor(landscape_type),
+    amount_grass                      = as.factor(amount_grass),
+    weed_quantity_mesic               = as.factor(weed_quantity_mesic),
+    weed_quantity_xeric               = as.factor(weed_quantity_xeric),
+    presence_of_weeds_other           = as.factor(presence_of_weeds_other),
+    parcel_pruning_trees              = as.factor(parcel_pruning_trees),
+    parcel_pruning_shrubs             = as.factor(parcel_pruning_shrubs),
+    parcel_grass_patchiness           = as.factor(parcel_grass_patchiness),
+    lawn_health                       = as.factor(lawn_health),
+    lawn_quality                      = as.factor(lawn_quality),
+    presence_of_lawn_trimmed          = as.factor(presence_of_lawn_trimmed),
+    presence_of_recent_cut            = as.factor(presence_of_recent_cut)
+  )
+
+try({
+  capeml::write_attributes(parcel_characteristics, overwrite = FALSE)
+  capeml::write_factors(parcel_characteristics, overwrite = FALSE)
+})
+
+```
+
+
+## human indicators
+
+```{r}
+#| eval: TRUE
+#| label: human_indicators
+
+human_indicators <- get_human_indicators('parcel')
+
+human_indicators <- human_indicators |> 
+  dplyr::mutate(
+    human_presence_of_path    = as.factor(human_presence_of_path),
+    human_footprints          = as.factor(human_footprints),
+    human_bike_tracks         = as.factor(human_bike_tracks),
+    human_off_road_vehicle    = as.factor(human_off_road_vehicle),
+    human_small_litter        = as.factor(human_small_litter),
+    human_dumped_trash_bags   = as.factor(human_dumped_trash_bags),
+    human_abandoned_vehicles  = as.factor(human_abandoned_vehicles),
+    human_graffiti            = as.factor(human_graffiti),
+    human_injured_plants      = as.factor(human_injured_plants),
+    human_informal_play       = as.factor(human_informal_play),
+    human_informal_recreation = as.factor(human_informal_recreation),
+    human_informal_living     = as.factor(human_informal_living),
+    human_sports_equipment    = as.factor(human_sports_equipment),
+    human_social_class        = as.factor(human_social_class)
+  )
+
+try({
+  capeml::write_attributes(human_indicators, overwrite = FALSE)
+  capeml::write_factors(human_indicators, overwrite = FALSE)
+})
+
+```
+
+
+## landscape irrigation
+
+```{r}
+#| eval: TRUE
+#| label: landscape_irrigation
+
+landscape_irrigation <- get_landscape_irrigation('parcel')
+
+landscape_irrigation <- landscape_irrigation |> 
+  dplyr::mutate(
+    appears_maintained               = as.factor(appears_maintained),
+    appears_professional             = as.factor(appears_professional),
+    appears_healthy                  = as.factor(appears_healthy),
+    appears_injured                  = as.factor(appears_injured),
+    presence_of_open_ground          = as.factor(presence_of_open_ground),
+    presence_of_trees                = as.factor(presence_of_trees),
+    presence_of_shrubs               = as.factor(presence_of_shrubs),
+    presence_of_cacti_succ           = as.factor(presence_of_cacti_succ),
+    presence_of_lawn                 = as.factor(presence_of_lawn),
+    presence_of_herbaceous_ground    = as.factor(presence_of_herbaceous_ground),
+    presence_of_other                = as.factor(presence_of_other),
+    presence_of_hand_water           = as.factor(presence_of_hand_water),
+    presence_of_drip_water           = as.factor(presence_of_drip_water),
+    presence_of_overhead_water       = as.factor(presence_of_overhead_water),
+    presence_of_flood_water          = as.factor(presence_of_flood_water),
+    # presence_of_subterranean_water = as.factor(presence_of_subterranean_water), # only NAs throwing off function so need to do by hand
+    presence_of_no_water             = as.factor(presence_of_no_water),
+    presence_of_pervious_irrigation  = as.factor(presence_of_pervious_irrigation)
+  )
+
+try({
+  capeml::write_attributes(landscape_irrigation, overwrite = FALSE)
+  capeml::write_factors(landscape_irrigation, overwrite = FALSE)
+})
+
+```
+
+
+## shrubs cacti succulents 
+
+```{r}
+#| eval: TRUE
+#| label: shrubs_cacti_succulents 
+
+shrubs_cacti_succulents <- get_shrubs_cacti_succulents('parcel') |> 
+  # dplyr::select(-year) |> 
+  dplyr::mutate(
+    vegetation_shape_code          = as.factor(vegetation_shape_code),
+    vegetation_classification_code = as.factor(vegetation_classification_code)
+  )
+
+try({
+  capeml::write_attributes(shrubs_cacti_succulents, overwrite = FALSE)
+  capeml::write_factors(shrubs_cacti_succulents, overwrite = FALSE)
+})
+
+```
+
+
+## trees 
+
+```{r}
+#| eval: TRUE
+#| label: trees 
+
+trees <- get_trees('parcel') |> 
+  dplyr::mutate(
+    vegetation_shape_code          = as.factor(vegetation_shape_code),
+    vegetation_classification_code = as.factor(vegetation_classification_code),
+    canopy_condition               = tolower(canopy_condition),
+    canopy_condition               = as.factor(canopy_condition)
+  )
+
+try({
+  capeml::write_attributes(trees, overwrite = FALSE)
+  capeml::write_factors(trees, overwrite = FALSE)
+})
+
+```
+
+
+## number perennials
+
+```{r}
+#| eval: TRUE
+#| label: number perennials 
+
+number_perennials <- get_number_perennials('parcel') 
+
+try({
+  capeml::write_attributes(number_perennials, overwrite = FALSE)
+  capeml::write_factors(number_perennials, overwrite = FALSE)
+})
+
+```
+
+
+## hedges
+
+```{r}
+#| eval: FALSE
+#| label: hedges 
+
+still no parcel hedges as of 2023
+
+# hedges <- get_hedges('parcel') %>% 
+#   mutate(
+#     vegetation_shape_code = as.factor(vegetation_shape_code),
+#     hedge_condition = tolower(hedge_condition),
+#     hedge_condition = as.factor(hedge_condition)
+#   )
+
+```
+
+
+## landuse
+
+```{r}
+#| eval: TRUE
+#| label: landuse 
+
+landuse <- get_landuse('parcel')
+
+
+try({
+  capeml::write_attributes(landuse, overwrite = FALSE)
+  capeml::write_factors(landuse, overwrite = FALSE)
+})
+
+```
+
+
+## neighborhood characteristics
+
+```{r}
+#| eval: TRUE
+#| label: neighborhood_characteristics 
+
+neighborhood_characteristics <- get_neighborhood_characteristics('parcel') |> 
+  dplyr::mutate(
+    neigh_social_class_poor                     = as.factor(neigh_social_class_poor),
+    neigh_social_class_rich                     = as.factor(neigh_social_class_rich),
+    neigh_social_class_upper_middle             = as.factor(neigh_social_class_upper_middle),
+    neigh_social_class_working_lower            = as.factor(neigh_social_class_working_lower),
+    neigh_buildings_residential                 = as.factor(neigh_buildings_residential),
+    neigh_buildings_commercial                  = as.factor(neigh_buildings_commercial),
+    neigh_buildings_institutional               = as.factor(neigh_buildings_institutional),
+    neigh_buildings_industrial                  = as.factor(neigh_buildings_industrial),
+    neigh_residence_apartments                  = as.factor(neigh_residence_apartments),
+    neigh_residence_multi_family                = as.factor(neigh_residence_multi_family),
+    neigh_residence_single_family               = as.factor(neigh_residence_single_family),
+    neigh_irrigation_drip_trickle               = as.factor(neigh_irrigation_drip_trickle),
+    neigh_irrigation_flood_hand                 = as.factor(neigh_irrigation_flood_hand),
+    neigh_irrigation_overhead_spray             = as.factor(neigh_irrigation_overhead_spray),
+    neigh_yard_upkeep_good                      = as.factor(neigh_yard_upkeep_good),
+    neigh_yard_upkeep_poor                      = as.factor(neigh_yard_upkeep_poor),
+    neigh_yard_upkeep_professionally_maintained = as.factor(neigh_yard_upkeep_professionally_maintained),
+    # neigh_landscape_mesic                     = as.factor(neigh_landscape_mesic),
+    # neigh_landscape_mixed                     = as.factor(neigh_landscape_mixed),
+    # neigh_landscape_xeric                     = as.factor(neigh_landscape_xeric),
+    neigh_landscape_turf_present                = as.factor(neigh_landscape_turf_present) #,
+    # neigh_traffic_collector_street            = as.factor(neigh_traffic_collector_street),
+    # neigh_traffic_cul_de_sac                  = as.factor(neigh_traffic_cul_de_sac),
+    # neigh_traffic_dirt_road                   = as.factor(neigh_traffic_dirt_road),
+    # neigh_traffic_freeway_expressway          = as.factor(neigh_traffic_freeway_expressway),
+    # neigh_traffic_highway                     = as.factor(neigh_traffic_highway),
+    # neigh_traffic_major_city_road             = as.factor(neigh_traffic_major_city_road),
+    # neigh_traffic_none                        = as.factor(neigh_traffic_none),
+    # neigh_traffic_paved_local_street          = as.factor(neigh_traffic_paved_local_street)
+  )
+
+
+try({
+  capeml::write_attributes(neighborhood_characteristics, overwrite = FALSE)
+  capeml::write_factors(neighborhood_characteristics, overwrite = FALSE)
+})
+
+```
+
+
+## structures
+
+```{r}
+#| eval: TRUE
+#| label: structures 
+
+structures <- get_structures('parcel') |> 
+  mutate(structure_use = replace(structure_use, grepl("agave", structure_use, ignore.case = T), 'house'))
+
+try({
+  capeml::write_attributes(structures, overwrite = FALSE)
+  capeml::write_factors(structures, overwrite = FALSE)
+})
+
+```
+
+
+## sampling events
+
+```{r}
+#| eval: TRUE
+#| label: sampling_events 
+
+sampling_events <- get_sampling_events('parcel')
+
+try({
+  capeml::write_attributes(sampling_events, overwrite = FALSE)
+  capeml::write_factors(sampling_events, overwrite = FALSE)
+})
+
+```
+
+
+
+## coverages
+
+```{r}
+#| eval: TRUE
+#| label: coverages
+
+coverage <- EML::set_coverage(
+  begin                 = as.character(as.Date(min(sampling_events$sample_date))),
+  end                   = as.character(as.Date(max(sampling_events$sample_date))),
+  geographicDescription = capeml::read_package_configuration()[["geographic_description"]],
+  west                  = -112.783,
+  east                  = -111.579,
+  north                 = 33.8267,
+  south                 = 33.2186
+)
+```
+
+
+## build
+
+```{r}
+#| eval: TRUE
+#| label: build
+
+# devtools::load_all("~/localRepos/capeml")
+
+dataset <- capeml::create_dataset()
+eml     <- capeml::create_eml()
+
+EML::eml_validate(eml)
+capeml::write_cap_eml()
+
+source("~/Documents/localSettings/aws.s3")
+
+lapply(
+  X   = list.files(pattern = "653_"),
+  FUN = capeml::data_to_amz
+)
+
+source("~/Documents/localSettings/edi.R")
+capeml::get_package_evaluation(full_report = FALSE)
+
+report <- capeml::get_package_evaluation(full_report = TRUE)
+xml2::write_xml(report, "/tmp/report.xml")
+
+capeml::create_package(environment = "staging")
+
+EDIutils::logout()
+```
