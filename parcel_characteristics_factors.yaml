@@ -1,0 +1,346 @@
+|
+  - attribute:
+      attributeName: parcel_survey_type
+      levels:
+      - code: back
+        definition: metadata_not_provided
+      - code: front
+        definition: metadata_not_provided
+  - attribute:
+      attributeName: parcel_social_class
+      levels:
+      - code: rich
+        definition: metadata_not_provided
+      - code: upper middle
+        definition: metadata_not_provided
+      - code: upper middle class
+        definition: metadata_not_provided
+      - code: working lower
+        definition: metadata_not_provided
+      - code: working lower class
+        definition: metadata_not_provided
+  - attribute:
+      attributeName: parcel_appearance
+      levels:
+      - code: good
+        definition: metadata_not_provided
+      - code: poor
+        definition: metadata_not_provided
+      - code: professionally or well maintained
+        definition: metadata_not_provided
+  - attribute:
+      attributeName: parcel_orderliness
+      levels:
+      - code: highly_structured_designed
+        definition: metadata_not_provided
+      - code: lacking_order_structure
+        definition: metadata_not_provided
+      - code: medium
+        definition: metadata_not_provided
+  - attribute:
+      attributeName: presence_of_bird_feeder
+      levels:
+      - code: 'FALSE'
+        definition: metadata_not_provided
+      - code: 'TRUE'
+        definition: metadata_not_provided
+  - attribute:
+      attributeName: presence_of_water_feature
+      levels:
+      - code: 'FALSE'
+        definition: metadata_not_provided
+      - code: 'TRUE'
+        definition: metadata_not_provided
+  - attribute:
+      attributeName: presence_of_porch_patio
+      levels:
+      - code: 'FALSE'
+        definition: metadata_not_provided
+      - code: 'TRUE'
+        definition: metadata_not_provided
+  - attribute:
+      attributeName: presence_of_cats
+      levels:
+      - code: 'FALSE'
+        definition: metadata_not_provided
+      - code: 'TRUE'
+        definition: metadata_not_provided
+  - attribute:
+      attributeName: presence_of_dogs
+      levels:
+      - code: 'FALSE'
+        definition: metadata_not_provided
+      - code: 'TRUE'
+        definition: metadata_not_provided
+  - attribute:
+      attributeName: presence_of_pet_waste
+      levels:
+      - code: 'FALSE'
+        definition: metadata_not_provided
+      - code: 'TRUE'
+        definition: metadata_not_provided
+  - attribute:
+      attributeName: presence_of_statues
+      levels:
+      - code: 'FALSE'
+        definition: metadata_not_provided
+      - code: 'TRUE'
+        definition: metadata_not_provided
+  - attribute:
+      attributeName: presence_of_flagpole
+      levels:
+      - code: 'FALSE'
+        definition: metadata_not_provided
+      - code: 'TRUE'
+        definition: metadata_not_provided
+  - attribute:
+      attributeName: presence_of_cars_yard
+      levels:
+      - code: 'FALSE'
+        definition: metadata_not_provided
+      - code: 'TRUE'
+        definition: metadata_not_provided
+  - attribute:
+      attributeName: presence_of_potted_plant
+      levels:
+      - code: 'FALSE'
+        definition: metadata_not_provided
+      - code: 'TRUE'
+        definition: metadata_not_provided
+  - attribute:
+      attributeName: presence_of_play_equip
+      levels:
+      - code: 'FALSE'
+        definition: metadata_not_provided
+      - code: 'TRUE'
+        definition: metadata_not_provided
+  - attribute:
+      attributeName: presence_of_lawn_ornaments
+      levels:
+      - code: 'FALSE'
+        definition: metadata_not_provided
+      - code: 'TRUE'
+        definition: metadata_not_provided
+  - attribute:
+      attributeName: presence_of_furniture
+      levels:
+      - code: 'FALSE'
+        definition: metadata_not_provided
+      - code: 'TRUE'
+        definition: metadata_not_provided
+  - attribute:
+      attributeName: presence_of_river_bed
+      levels:
+      - code: 'FALSE'
+        definition: metadata_not_provided
+      - code: 'TRUE'
+        definition: metadata_not_provided
+  - attribute:
+      attributeName: presence_of_yard_topography
+      levels:
+      - code: 'FALSE'
+        definition: metadata_not_provided
+      - code: 'TRUE'
+        definition: metadata_not_provided
+  - attribute:
+      attributeName: presence_of_litter
+      levels:
+      - code: 'FALSE'
+        definition: metadata_not_provided
+      - code: 'TRUE'
+        definition: metadata_not_provided
+  - attribute:
+      attributeName: presence_of_veg_litter
+      levels:
+      - code: 'FALSE'
+        definition: metadata_not_provided
+      - code: 'TRUE'
+        definition: metadata_not_provided
+  - attribute:
+      attributeName: presence_of_yard_tools
+      levels:
+      - code: 'FALSE'
+        definition: metadata_not_provided
+      - code: 'TRUE'
+        definition: metadata_not_provided
+  - attribute:
+      attributeName: presence_of_light_post
+      levels:
+      - code: 'FALSE'
+        definition: metadata_not_provided
+      - code: 'TRUE'
+        definition: metadata_not_provided
+  - attribute:
+      attributeName: presence_of_other
+      levels:
+      - code: 'FALSE'
+        definition: metadata_not_provided
+      - code: 'TRUE'
+        definition: metadata_not_provided
+  - attribute:
+      attributeName: presence_of_irrigation_flood
+      levels:
+      - code: 'FALSE'
+        definition: metadata_not_provided
+      - code: 'TRUE'
+        definition: metadata_not_provided
+  - attribute:
+      attributeName: presence_of_irrigation_drip
+      levels:
+      - code: 'FALSE'
+        definition: metadata_not_provided
+      - code: 'TRUE'
+        definition: metadata_not_provided
+  - attribute:
+      attributeName: presence_of_irrigation_hose
+      levels:
+      - code: 'FALSE'
+        definition: metadata_not_provided
+      - code: 'TRUE'
+        definition: metadata_not_provided
+  - attribute:
+      attributeName: presence_of_irrigation_sprinklers
+      levels:
+      - code: 'FALSE'
+        definition: metadata_not_provided
+      - code: 'TRUE'
+        definition: metadata_not_provided
+  - attribute:
+      attributeName: landscape_type
+      levels:
+      - code: mesic
+        definition: metadata_not_provided
+      - code: mixed
+        definition: metadata_not_provided
+      - code: patio
+        definition: metadata_not_provided
+      - code: xeric
+        definition: metadata_not_provided
+  - attribute:
+      attributeName: amount_grass
+      levels:
+      - code: about half
+        definition: metadata_not_provided
+      - code: all or mostly grass
+        definition: metadata_not_provided
+      - code: less than half
+        definition: metadata_not_provided
+      - code: more than half
+        definition: metadata_not_provided
+      - code: none
+        definition: metadata_not_provided
+  - attribute:
+      attributeName: weed_quantity_mesic
+      levels:
+      - code: few
+        definition: metadata_not_provided
+      - code: infestation
+        definition: metadata_not_provided
+      - code: many
+        definition: metadata_not_provided
+      - code: medium
+        definition: metadata_not_provided
+      - code: no grass
+        definition: metadata_not_provided
+      - code: no weeds
+        definition: metadata_not_provided
+  - attribute:
+      attributeName: weed_quantity_xeric
+      levels:
+      - code: few
+        definition: metadata_not_provided
+      - code: infestation
+        definition: metadata_not_provided
+      - code: many
+        definition: metadata_not_provided
+      - code: medium
+        definition: metadata_not_provided
+      - code: no grass
+        definition: metadata_not_provided
+      - code: no weeds
+        definition: metadata_not_provided
+  - attribute:
+      attributeName: presence_of_weeds_other
+      levels:
+      - code: 'FALSE'
+        definition: metadata_not_provided
+      - code: 'TRUE'
+        definition: metadata_not_provided
+  - attribute:
+      attributeName: parcel_pruning_trees
+      levels:
+      - code: 'no'
+        definition: metadata_not_provided
+      - code: no specimen
+        definition: metadata_not_provided
+      - code: 'yes'
+        definition: metadata_not_provided
+  - attribute:
+      attributeName: parcel_pruning_shrubs
+      levels:
+      - code: 'no'
+        definition: metadata_not_provided
+      - code: no specimen
+        definition: metadata_not_provided
+      - code: 'yes'
+        definition: metadata_not_provided
+  - attribute:
+      attributeName: parcel_grass_patchiness
+      levels:
+      - code: even grass
+        definition: metadata_not_provided
+      - code: patches
+        definition: metadata_not_provided
+  - attribute:
+      attributeName: lawn_health
+      levels:
+      - code: little stress
+        definition: metadata_not_provided
+      - code: moderate stress
+        definition: metadata_not_provided
+      - code: no stress
+        definition: metadata_not_provided
+      - code: severe stress
+        definition: metadata_not_provided
+      - code: some stress
+        definition: metadata_not_provided
+  - attribute:
+      attributeName: lawn_quality
+      levels:
+      - code: between moderately green and overall yellow
+        definition: metadata_not_provided
+      - code: between monoculture and mostly monoculture
+        definition: metadata_not_provided
+      - code: between mostly monoculture and moderately green
+        definition: metadata_not_provided
+      - code: between overall yellow and very patchy but closer to overall yellow
+        definition: metadata_not_provided
+      - code: between overall yellow and very patchy but closer to patchy and overall
+          brown
+        definition: metadata_not_provided
+      - code: mixed species (grass & weeds), evenly distributed, overall moderately
+          green
+        definition: metadata_not_provided
+      - code: mixed species (grass & weeds), patchy, overall yellow yard
+        definition: metadata_not_provided
+      - code: monoculture (no patches, no weeds), dense, very green grass (like golf
+          course)
+        definition: metadata_not_provided
+      - code: mostly monoculture (few weeds), overall greenish-yellow yard
+        definition: metadata_not_provided
+      - code: very patchy (dead grass & weeds + bare ground) overall brown color
+        definition: metadata_not_provided
+  - attribute:
+      attributeName: presence_of_lawn_trimmed
+      levels:
+      - code: 'FALSE'
+        definition: metadata_not_provided
+      - code: 'TRUE'
+        definition: metadata_not_provided
+  - attribute:
+      attributeName: presence_of_recent_cut
+      levels:
+      - code: 'FALSE'
+        definition: metadata_not_provided
+      - code: 'TRUE'
+        definition: metadata_not_provided

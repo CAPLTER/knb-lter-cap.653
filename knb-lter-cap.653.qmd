@@ -19,7 +19,7 @@ pg <- pg_local_connect("caplter")
 #| eval: true
 #| label: queries
 
-source("esca_sql_queries.R")
+source("~/localRepos/knb-lter-cap.652/esca_sql_queries.R")
 ```
 
 
@@ -29,7 +29,7 @@ source("esca_sql_queries.R")
 #| eval: true
 #| label: parcel_characteristics 
 
-parcel_characteristics <- get_parcel_characteristics('parcel')
+parcel_characteristics <- get_parcel_characteristics("parcel")
 
 parcel_characteristics <- parcel_characteristics |>
   dplyr::mutate(
@@ -95,7 +95,7 @@ try({
 #| eval: TRUE
 #| label: human_indicators
 
-human_indicators <- get_human_indicators('parcel')
+human_indicators <- get_human_indicators("parcel")
 
 human_indicators <- human_indicators |> 
   dplyr::mutate(

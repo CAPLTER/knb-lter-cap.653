@@ -1,0 +1,191 @@
+|
+  sample_date:
+    attributeName: sample_date
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    columnClasses: Date
+    formatString: YYYY-MM-DD
+  site_code:
+    attributeName: site_code
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    columnClasses: character
+    definition: ''
+  human_presence_of_path:
+    attributeName: human_presence_of_path
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    columnClasses: factor
+  human_footprints:
+    attributeName: human_footprints
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    columnClasses: factor
+  human_bike_tracks:
+    attributeName: human_bike_tracks
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    columnClasses: factor
+  human_off_road_vehicle:
+    attributeName: human_off_road_vehicle
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    columnClasses: factor
+  human_small_litter:
+    attributeName: human_small_litter
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    columnClasses: factor
+  human_dumped_trash_bags:
+    attributeName: human_dumped_trash_bags
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    columnClasses: factor
+  human_abandoned_vehicles:
+    attributeName: human_abandoned_vehicles
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    columnClasses: factor
+  human_graffiti:
+    attributeName: human_graffiti
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    columnClasses: factor
+  human_injured_plants:
+    attributeName: human_injured_plants
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    columnClasses: factor
+  human_informal_play:
+    attributeName: human_informal_play
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    columnClasses: factor
+  human_informal_recreation:
+    attributeName: human_informal_recreation
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    columnClasses: factor
+  human_informal_living:
+    attributeName: human_informal_living
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    columnClasses: factor
+  human_sports_equipment:
+    attributeName: human_sports_equipment
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    columnClasses: factor
+  human_number_cars:
+    attributeName: human_number_cars
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    unit: ''
+    numberType: natural
+    minimum: 1
+    maximum: 8
+    columnClasses: numeric
+  human_number_motorcycles:
+    attributeName: human_number_motorcycles
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    unit: ''
+    numberType: natural
+    minimum: 0
+    maximum: 0
+    columnClasses: numeric
+  human_number_bicycles:
+    attributeName: human_number_bicycles
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    unit: ''
+    numberType: natural
+    minimum: 0
+    maximum: 0
+    columnClasses: numeric
+  human_number_houses:
+    attributeName: human_number_houses
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    unit: ''
+    numberType: natural
+    minimum: 2
+    maximum: 9
+    columnClasses: numeric
+  human_number_rvs:
+    attributeName: human_number_rvs
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    unit: ''
+    numberType: natural
+    minimum: 0
+    maximum: 0
+    columnClasses: numeric
+  human_social_class:
+    attributeName: human_social_class
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    columnClasses: factor

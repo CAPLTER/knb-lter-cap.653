@@ -1,0 +1,501 @@
+|
+  sample_date:
+    attributeName: sample_date
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    columnClasses: Date
+    formatString: YYYY-MM-DD
+  site_code:
+    attributeName: site_code
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    columnClasses: character
+    definition: ''
+  parcel_survey_type:
+    attributeName: parcel_survey_type
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    columnClasses: factor
+  residence_type:
+    attributeName: residence_type
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    columnClasses: character
+    definition: ''
+  parcel_social_class:
+    attributeName: parcel_social_class
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    columnClasses: factor
+  parcel_appearance:
+    attributeName: parcel_appearance
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    columnClasses: factor
+  parcel_orderliness:
+    attributeName: parcel_orderliness
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    columnClasses: factor
+  presence_of_bird_feeder:
+    attributeName: presence_of_bird_feeder
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    columnClasses: factor
+  presence_of_water_feature:
+    attributeName: presence_of_water_feature
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    columnClasses: factor
+  presence_of_porch_patio:
+    attributeName: presence_of_porch_patio
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    columnClasses: factor
+  presence_of_cats:
+    attributeName: presence_of_cats
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    columnClasses: factor
+  presence_of_dogs:
+    attributeName: presence_of_dogs
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    columnClasses: factor
+  presence_of_pet_waste:
+    attributeName: presence_of_pet_waste
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    columnClasses: factor
+  presence_of_statues:
+    attributeName: presence_of_statues
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    columnClasses: factor
+  presence_of_flagpole:
+    attributeName: presence_of_flagpole
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    columnClasses: factor
+  presence_of_cars_yard:
+    attributeName: presence_of_cars_yard
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    columnClasses: factor
+  presence_of_potted_plant:
+    attributeName: presence_of_potted_plant
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    columnClasses: factor
+  presence_of_play_equip:
+    attributeName: presence_of_play_equip
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    columnClasses: factor
+  presence_of_lawn_ornaments:
+    attributeName: presence_of_lawn_ornaments
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    columnClasses: factor
+  presence_of_furniture:
+    attributeName: presence_of_furniture
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    columnClasses: factor
+  presence_of_river_bed:
+    attributeName: presence_of_river_bed
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    columnClasses: factor
+  presence_of_yard_topography:
+    attributeName: presence_of_yard_topography
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    columnClasses: factor
+  presence_of_litter:
+    attributeName: presence_of_litter
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    columnClasses: factor
+  presence_of_veg_litter:
+    attributeName: presence_of_veg_litter
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    columnClasses: factor
+  presence_of_yard_tools:
+    attributeName: presence_of_yard_tools
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    columnClasses: factor
+  presence_of_light_post:
+    attributeName: presence_of_light_post
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    columnClasses: factor
+  presence_of_other:
+    attributeName: presence_of_other
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    columnClasses: factor
+  presence_of_irrigation_flood:
+    attributeName: presence_of_irrigation_flood
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    columnClasses: factor
+  presence_of_irrigation_drip:
+    attributeName: presence_of_irrigation_drip
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    columnClasses: factor
+  presence_of_irrigation_hose:
+    attributeName: presence_of_irrigation_hose
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    columnClasses: factor
+  presence_of_irrigation_sprinklers:
+    attributeName: presence_of_irrigation_sprinklers
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    columnClasses: factor
+  landscape_type:
+    attributeName: landscape_type
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    columnClasses: factor
+  amount_grass:
+    attributeName: amount_grass
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    columnClasses: factor
+  weed_quantity_mesic:
+    attributeName: weed_quantity_mesic
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    columnClasses: factor
+  weed_quantity_xeric:
+    attributeName: weed_quantity_xeric
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    columnClasses: factor
+  presence_of_weeds_other:
+    attributeName: presence_of_weeds_other
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    columnClasses: factor
+  parcel_pruning_trees:
+    attributeName: parcel_pruning_trees
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    columnClasses: factor
+  parcel_pruning_shrubs:
+    attributeName: parcel_pruning_shrubs
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    columnClasses: factor
+  parcel_grass_patchiness:
+    attributeName: parcel_grass_patchiness
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    columnClasses: factor
+  parcel_percent_living_grass:
+    attributeName: parcel_percent_living_grass
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    unit: ''
+    numberType: whole
+    minimum: 0
+    maximum: 100
+    columnClasses: numeric
+  parcel_percent_bare:
+    attributeName: parcel_percent_bare
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    unit: ''
+    numberType: whole
+    minimum: 0
+    maximum: 100
+    columnClasses: numeric
+  parcel_percent_dead:
+    attributeName: parcel_percent_dead
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    unit: ''
+    numberType: whole
+    minimum: 0
+    maximum: 90
+    columnClasses: numeric
+  parcel_percent_weeds:
+    attributeName: parcel_percent_weeds
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    unit: ''
+    numberType: whole
+    minimum: 0
+    maximum: 10100
+    columnClasses: numeric
+  parcel_percent_other:
+    attributeName: parcel_percent_other
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    unit: ''
+    numberType: whole
+    minimum: 0
+    maximum: 95
+    columnClasses: numeric
+  parcel_percent_no_stress:
+    attributeName: parcel_percent_no_stress
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    unit: ''
+    numberType: whole
+    minimum: 0
+    maximum: 1003333
+    columnClasses: numeric
+  parcel_percent_little_stress:
+    attributeName: parcel_percent_little_stress
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    unit: ''
+    numberType: whole
+    minimum: 0
+    maximum: 1005
+    columnClasses: numeric
+  parcel_percent_some_stress:
+    attributeName: parcel_percent_some_stress
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    unit: ''
+    numberType: whole
+    minimum: 0
+    maximum: 100
+    columnClasses: numeric
+  parcel_percent_moderate_stress:
+    attributeName: parcel_percent_moderate_stress
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    unit: ''
+    numberType: whole
+    minimum: 0
+    maximum: 100
+    columnClasses: numeric
+  parcel_percent_severe_stress:
+    attributeName: parcel_percent_severe_stress
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    unit: ''
+    numberType: whole
+    minimum: 0
+    maximum: 50
+    columnClasses: numeric
+  lawn_health:
+    attributeName: lawn_health
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    columnClasses: factor
+  lawn_quality:
+    attributeName: lawn_quality
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    columnClasses: factor
+  presence_of_lawn_trimmed:
+    attributeName: presence_of_lawn_trimmed
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    columnClasses: factor
+  presence_of_recent_cut:
+    attributeName: presence_of_recent_cut
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    columnClasses: factor
+  parcel_grass_height:
+    attributeName: parcel_grass_height
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    unit: ''
+    numberType: whole
+    minimum: 0
+    maximum: 30
+    columnClasses: numeric
+  parcel_weed_height:
+    attributeName: parcel_weed_height
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    unit: ''
+    numberType: whole
+    minimum: 0
+    maximum: 100
+    columnClasses: numeric
+  parcel_feature_comments:
+    attributeName: parcel_feature_comments
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    columnClasses: character
+    definition: ''
