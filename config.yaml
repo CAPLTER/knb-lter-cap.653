@@ -1,0 +1,7 @@
+scope: knb-lter-cap
+identifier: 653
+baseURL: https://gios-data.s3.us-west-2.amazonaws.com/datasets/cap/
+project: lter
+title: 'Ecological Survey of Central Arizona: a survey of key ecological indicators in parcels of residential areas in the greater Phoenix metropolitan area, ongoing since 2010'
+maintenance: regular
+geographic_description: 'CAP LTER study area: greater Phoenix, Arizona (USA) metropolitan area and surrounding Sonoran desert region'

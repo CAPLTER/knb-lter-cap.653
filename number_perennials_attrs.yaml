@@ -1,0 +1,48 @@
+|
+  site_code:
+    attributeName: site_code
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    columnClasses: character
+    definition: ''
+  sample_date:
+    attributeName: sample_date
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    columnClasses: Date
+    formatString: YYYY-MM-DD
+  vegetation_scientific_name:
+    attributeName: vegetation_scientific_name
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    columnClasses: character
+    definition: ''
+  plant_count_type_code:
+    attributeName: plant_count_type_code
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    columnClasses: factor
+  number_plants:
+    attributeName: number_plants
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    unit: ''
+    numberType: natural
+    minimum: 1.0
+    maximum: 302.0
+    columnClasses: numeric

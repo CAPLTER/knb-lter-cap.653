@@ -1,0 +1,10 @@
+|
+  - attribute:
+      attributeName: plant_count_type_code
+      levels:
+      - code: pa_back
+        definition: metadata_not_provided
+      - code: pa_front
+        definition: metadata_not_provided
+      - code: parcel
+        definition: metadata_not_provided

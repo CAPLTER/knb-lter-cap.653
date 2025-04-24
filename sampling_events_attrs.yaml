@@ -1,0 +1,79 @@
+|
+  sample_date:
+    attributeName: sample_date
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    columnClasses: Date
+    formatString: YYYY-MM-DD
+  site_code:
+    attributeName: site_code
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    columnClasses: character
+    definition: ''
+  elevation:
+    attributeName: elevation
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    unit: ''
+    numberType: natural
+    minimum: 277.0
+    maximum: 722.0
+    columnClasses: numeric
+  slope:
+    attributeName: slope
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    unit: ''
+    numberType: natural
+    minimum: .inf
+    maximum: -.inf
+    columnClasses: numeric
+  aspect:
+    attributeName: aspect
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    columnClasses: character
+    definition: ''
+  weather_on_the_day:
+    attributeName: weather_on_the_day
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    columnClasses: character
+    definition: ''
+  weather_recent_rain_notes:
+    attributeName: weather_recent_rain_notes
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    columnClasses: character
+    definition: ''
+  general_description:
+    attributeName: general_description
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    columnClasses: character
+    definition: ''

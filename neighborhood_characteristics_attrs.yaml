@@ -1,0 +1,260 @@
+|
+  sample_date:
+    attributeName: sample_date
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    columnClasses: Date
+    formatString: YYYY-MM-DD
+  site_code:
+    attributeName: site_code
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    columnClasses: character
+    definition: ''
+  neigh_social_class_poor:
+    attributeName: neigh_social_class_poor
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    columnClasses: factor
+  neigh_social_class_rich:
+    attributeName: neigh_social_class_rich
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    columnClasses: factor
+  neigh_social_class_upper_middle:
+    attributeName: neigh_social_class_upper_middle
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    columnClasses: factor
+  neigh_social_class_working_lower:
+    attributeName: neigh_social_class_working_lower
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    columnClasses: factor
+  neigh_buildings_residential:
+    attributeName: neigh_buildings_residential
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    columnClasses: factor
+  neigh_buildings_commercial:
+    attributeName: neigh_buildings_commercial
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    columnClasses: factor
+  neigh_buildings_institutional:
+    attributeName: neigh_buildings_institutional
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    columnClasses: factor
+  neigh_buildings_industrial:
+    attributeName: neigh_buildings_industrial
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    columnClasses: factor
+  neigh_residence_apartments:
+    attributeName: neigh_residence_apartments
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    columnClasses: factor
+  neigh_residence_multi_family:
+    attributeName: neigh_residence_multi_family
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    columnClasses: factor
+  neigh_residence_single_family:
+    attributeName: neigh_residence_single_family
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    columnClasses: factor
+  neigh_irrigation_drip_trickle:
+    attributeName: neigh_irrigation_drip_trickle
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    columnClasses: factor
+  neigh_irrigation_flood_hand:
+    attributeName: neigh_irrigation_flood_hand
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    columnClasses: factor
+  neigh_irrigation_overhead_spray:
+    attributeName: neigh_irrigation_overhead_spray
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    columnClasses: factor
+  neigh_yard_upkeep_good:
+    attributeName: neigh_yard_upkeep_good
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    columnClasses: factor
+  neigh_yard_upkeep_poor:
+    attributeName: neigh_yard_upkeep_poor
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    columnClasses: factor
+  neigh_yard_upkeep_professionally_maintained:
+    attributeName: neigh_yard_upkeep_professionally_maintained
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    columnClasses: factor
+  neigh_landscape_mesic:
+    attributeName: neigh_landscape_mesic
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    columnClasses: factor
+  neigh_landscape_mixed:
+    attributeName: neigh_landscape_mixed
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    columnClasses: factor
+  neigh_landscape_xeric:
+    attributeName: neigh_landscape_xeric
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    columnClasses: factor
+  neigh_landscape_turf_present:
+    attributeName: neigh_landscape_turf_present
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    columnClasses: factor
+  neigh_traffic_collector_street:
+    attributeName: neigh_traffic_collector_street
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    columnClasses: factor
+  neigh_traffic_cul_de_sac:
+    attributeName: neigh_traffic_cul_de_sac
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    columnClasses: factor
+  neigh_traffic_dirt_road:
+    attributeName: neigh_traffic_dirt_road
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    columnClasses: factor
+  neigh_traffic_freeway_expressway:
+    attributeName: neigh_traffic_freeway_expressway
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    columnClasses: factor
+  neigh_traffic_highway:
+    attributeName: neigh_traffic_highway
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    columnClasses: factor
+  neigh_traffic_major_city_road:
+    attributeName: neigh_traffic_major_city_road
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    columnClasses: factor
+  neigh_traffic_none:
+    attributeName: neigh_traffic_none
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    columnClasses: factor
+  neigh_traffic_paved_local_street:
+    attributeName: neigh_traffic_paved_local_street
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    columnClasses: factor
+  neigh_notes:
+    attributeName: neigh_notes
+    attributeDefinition: ''
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    columnClasses: character
+    definition: ''
