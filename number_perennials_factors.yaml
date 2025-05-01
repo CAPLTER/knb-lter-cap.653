@@ -3,8 +3,8 @@
       attributeName: plant_count_type_code
       levels:
       - code: pa_back
-        definition: metadata_not_provided
+        definition: 'back of the parcel (the backyard)'
       - code: pa_front
-        definition: metadata_not_provided
+        definition: 'front of the parcel (the frontyard)' 
       - code: parcel
-        definition: metadata_not_provided
+        definition: 'observation is within the parcel but specific location is not distinguished'

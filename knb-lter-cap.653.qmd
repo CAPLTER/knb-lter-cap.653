@@ -366,8 +366,14 @@ try({
 
 ## structures
 
+Since we are not pulling any measurements from the structures table (if and
+until clinometer data are resolved), there seems little value in these data. All
+values save one (`model`) are residential, which goes without saying as these
+are parcel data. We will omit these data from the package unless we can identify
+value in presenting them.
+
 ```{r}
-#| eval: TRUE
+#| eval: FALSE
 #| label: structures
 
 structures <- get_structures("parcel") |>
@@ -391,13 +397,38 @@ try({
 
 ```{r}
 #| eval: TRUE
-#| label: sampling_events 
+#| label: sampling_events
 
-sampling_events <- get_sampling_events("parcel")
+sampling_events_base_query <- "
+  SELECT
+    sampling_events.samp_date AS sample_date,
+    sites.site_code,
+    -- sites.elevation,
+    -- sites_geography.slope,
+    -- sites_geography.aspect,
+    hi.weather_on_the_day,
+    hi.weather_recent_rain_notes,
+    hi.general_description
+  FROM survey200.sampling_events
+  JOIN survey200.sites ON (sampling_events.site_id = sites.site_id)
+  JOIN survey200.human_indicators hi ON (sampling_events.survey_id = hi.survey_id)
+  -- LEFT JOIN survey200.sites_geography ON (sites_geography.survey_id = sampling_events.survey_id)
+  WHERE
+    sites.research_focus::text = 'parcel'::text
+  ORDER BY
+    EXTRACT (YEAR FROM sampling_events.samp_date),
+    sites.site_code
+    ;
+    "
+
+sampling_events <- DBI::dbGetQuery(
+  conn      = pg,
+  statement = sampling_events_base_query
+)
 
 try({
   capeml::write_attributes(sampling_events, overwrite = FALSE)
-  capeml::write_factors(sampling_events, overwrite = FALSE)
+  # capeml::write_factors(sampling_events, overwrite = FALSE)
 })
 
 ```

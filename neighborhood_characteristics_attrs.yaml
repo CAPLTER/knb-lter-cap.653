@@ -1,7 +1,7 @@
 |
   sample_date:
     attributeName: sample_date
-    attributeDefinition: ''
+    attributeDefinition: 'survey date'
     propertyURI: ''
     propertyLabel: ''
     valueURI: ''
@@ -10,7 +10,7 @@
     formatString: YYYY-MM-DD
   site_code:
     attributeName: site_code
-    attributeDefinition: ''
+    attributeDefinition: 'location code'
     propertyURI: ''
     propertyLabel: ''
     valueURI: ''
@@ -19,7 +19,7 @@
     definition: ''
   neigh_social_class_poor:
     attributeName: neigh_social_class_poor
-    attributeDefinition: ''
+    attributeDefinition: 'perceived poor neighborhood'
     propertyURI: ''
     propertyLabel: ''
     valueURI: ''
@@ -27,7 +27,7 @@
     columnClasses: factor
   neigh_social_class_rich:
     attributeName: neigh_social_class_rich
-    attributeDefinition: ''
+    attributeDefinition: 'perceived wealthy neighborhood'
     propertyURI: ''
     propertyLabel: ''
     valueURI: ''
@@ -35,7 +35,7 @@
     columnClasses: factor
   neigh_social_class_upper_middle:
     attributeName: neigh_social_class_upper_middle
-    attributeDefinition: ''
+    attributeDefinition: 'perceived upper middle class neighborhood'
     propertyURI: ''
     propertyLabel: ''
     valueURI: ''
@@ -43,7 +43,7 @@
     columnClasses: factor
   neigh_social_class_working_lower:
     attributeName: neigh_social_class_working_lower
-    attributeDefinition: ''
+    attributeDefinition: 'perceived working lower class neighborhood'
     propertyURI: ''
     propertyLabel: ''
     valueURI: ''
@@ -51,7 +51,7 @@
     columnClasses: factor
   neigh_buildings_residential:
     attributeName: neigh_buildings_residential
-    attributeDefinition: ''
+    attributeDefinition: 'residential buildings in neighborhood'
     propertyURI: ''
     propertyLabel: ''
     valueURI: ''
@@ -59,7 +59,7 @@
     columnClasses: factor
   neigh_buildings_commercial:
     attributeName: neigh_buildings_commercial
-    attributeDefinition: ''
+    attributeDefinition: 'commercial buildings in neighborhood'
     propertyURI: ''
     propertyLabel: ''
     valueURI: ''
@@ -67,7 +67,7 @@
     columnClasses: factor
   neigh_buildings_institutional:
     attributeName: neigh_buildings_institutional
-    attributeDefinition: ''
+    attributeDefinition: 'institutional buildings in neighborhood'
     propertyURI: ''
     propertyLabel: ''
     valueURI: ''
@@ -75,7 +75,7 @@
     columnClasses: factor
   neigh_buildings_industrial:
     attributeName: neigh_buildings_industrial
-    attributeDefinition: ''
+    attributeDefinition: 'industrial buildings in neighborhood'
     propertyURI: ''
     propertyLabel: ''
     valueURI: ''
@@ -83,7 +83,7 @@
     columnClasses: factor
   neigh_residence_apartments:
     attributeName: neigh_residence_apartments
-    attributeDefinition: ''
+    attributeDefinition: 'residential apartments in neighborhood'
     propertyURI: ''
     propertyLabel: ''
     valueURI: ''
@@ -91,7 +91,7 @@
     columnClasses: factor
   neigh_residence_multi_family:
     attributeName: neigh_residence_multi_family
-    attributeDefinition: ''
+    attributeDefinition: 'multi-family residences in neighborhood'
     propertyURI: ''
     propertyLabel: ''
     valueURI: ''
@@ -99,7 +99,7 @@
     columnClasses: factor
   neigh_residence_single_family:
     attributeName: neigh_residence_single_family
-    attributeDefinition: ''
+    attributeDefinition: 'single-family residences in neighborhood'
     propertyURI: ''
     propertyLabel: ''
     valueURI: ''
@@ -107,7 +107,7 @@
     columnClasses: factor
   neigh_irrigation_drip_trickle:
     attributeName: neigh_irrigation_drip_trickle
-    attributeDefinition: ''
+    attributeDefinition: 'evidence of drip irrigation in neighborhood'
     propertyURI: ''
     propertyLabel: ''
     valueURI: ''
@@ -115,7 +115,7 @@
     columnClasses: factor
   neigh_irrigation_flood_hand:
     attributeName: neigh_irrigation_flood_hand
-    attributeDefinition: ''
+    attributeDefinition: 'evidence of flood irrigation or hand watering in neighborhood'
     propertyURI: ''
     propertyLabel: ''
     valueURI: ''
@@ -123,7 +123,7 @@
     columnClasses: factor
   neigh_irrigation_overhead_spray:
     attributeName: neigh_irrigation_overhead_spray
-    attributeDefinition: ''
+    attributeDefinition: 'evidence of overhead watering in neighborhood'
     propertyURI: ''
     propertyLabel: ''
     valueURI: ''
@@ -131,7 +131,7 @@
     columnClasses: factor
   neigh_yard_upkeep_good:
     attributeName: neigh_yard_upkeep_good
-    attributeDefinition: ''
+    attributeDefinition: 'upkeep of yards in neighborhood is good'
     propertyURI: ''
     propertyLabel: ''
     valueURI: ''
@@ -139,7 +139,7 @@
     columnClasses: factor
   neigh_yard_upkeep_poor:
     attributeName: neigh_yard_upkeep_poor
-    attributeDefinition: ''
+    attributeDefinition: 'upkeep of yards in neighborhood is poor'
     propertyURI: ''
     propertyLabel: ''
     valueURI: ''
@@ -147,7 +147,7 @@
     columnClasses: factor
   neigh_yard_upkeep_professionally_maintained:
     attributeName: neigh_yard_upkeep_professionally_maintained
-    attributeDefinition: ''
+    attributeDefinition: 'yards in neighborhood appear professionally maintained'
     propertyURI: ''
     propertyLabel: ''
     valueURI: ''
@@ -155,7 +155,7 @@
     columnClasses: factor
   neigh_landscape_mesic:
     attributeName: neigh_landscape_mesic
-    attributeDefinition: ''
+    attributeDefinition: 'mesic landscaping in neighborhood'
     propertyURI: ''
     propertyLabel: ''
     valueURI: ''
@@ -163,7 +163,7 @@
     columnClasses: factor
   neigh_landscape_mixed:
     attributeName: neigh_landscape_mixed
-    attributeDefinition: ''
+    attributeDefinition: 'mixed (mesic; xeric) landscaping in neighborhood'
     propertyURI: ''
     propertyLabel: ''
     valueURI: ''
@@ -171,7 +171,7 @@
     columnClasses: factor
   neigh_landscape_xeric:
     attributeName: neigh_landscape_xeric
-    attributeDefinition: ''
+    attributeDefinition: 'xeric landscaping in neighborhood'
     propertyURI: ''
     propertyLabel: ''
     valueURI: ''
@@ -179,7 +179,7 @@
     columnClasses: factor
   neigh_landscape_turf_present:
     attributeName: neigh_landscape_turf_present
-    attributeDefinition: ''
+    attributeDefinition: 'turf present in neighborhood'
     propertyURI: ''
     propertyLabel: ''
     valueURI: ''
@@ -187,7 +187,7 @@
     columnClasses: factor
   neigh_traffic_collector_street:
     attributeName: neigh_traffic_collector_street
-    attributeDefinition: ''
+    attributeDefinition: 'collector street(s) in neighborhood'
     propertyURI: ''
     propertyLabel: ''
     valueURI: ''
@@ -195,7 +195,7 @@
     columnClasses: factor
   neigh_traffic_cul_de_sac:
     attributeName: neigh_traffic_cul_de_sac
-    attributeDefinition: ''
+    attributeDefinition: 'cul de sac in neighborhood'
     propertyURI: ''
     propertyLabel: ''
     valueURI: ''
@@ -203,7 +203,7 @@
     columnClasses: factor
   neigh_traffic_dirt_road:
     attributeName: neigh_traffic_dirt_road
-    attributeDefinition: ''
+    attributeDefinition: 'dirt road(s) in neighborhood'
     propertyURI: ''
     propertyLabel: ''
     valueURI: ''
@@ -211,7 +211,7 @@
     columnClasses: factor
   neigh_traffic_freeway_expressway:
     attributeName: neigh_traffic_freeway_expressway
-    attributeDefinition: ''
+    attributeDefinition: 'freeway or expressway in neighborhood'
     propertyURI: ''
     propertyLabel: ''
     valueURI: ''
@@ -219,7 +219,7 @@
     columnClasses: factor
   neigh_traffic_highway:
     attributeName: neigh_traffic_highway
-    attributeDefinition: ''
+    attributeDefinition: 'highway in neighborhood'
     propertyURI: ''
     propertyLabel: ''
     valueURI: ''
@@ -227,7 +227,7 @@
     columnClasses: factor
   neigh_traffic_major_city_road:
     attributeName: neigh_traffic_major_city_road
-    attributeDefinition: ''
+    attributeDefinition: 'major city road(s) in neighborhood'
     propertyURI: ''
     propertyLabel: ''
     valueURI: ''
@@ -235,7 +235,7 @@
     columnClasses: factor
   neigh_traffic_none:
     attributeName: neigh_traffic_none
-    attributeDefinition: ''
+    attributeDefinition: 'no road(s) in neighborhood'
     propertyURI: ''
     propertyLabel: ''
     valueURI: ''
@@ -243,7 +243,7 @@
     columnClasses: factor
   neigh_traffic_paved_local_street:
     attributeName: neigh_traffic_paved_local_street
-    attributeDefinition: ''
+    attributeDefinition: 'pavel local street(s) in neighborhood'
     propertyURI: ''
     propertyLabel: ''
     valueURI: ''
@@ -251,7 +251,7 @@
     columnClasses: factor
   neigh_notes:
     attributeName: neigh_notes
-    attributeDefinition: ''
+    attributeDefinition: 'general notes about the neighborhood'
     propertyURI: ''
     propertyLabel: ''
     valueURI: ''

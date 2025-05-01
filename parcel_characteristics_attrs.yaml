@@ -1,7 +1,7 @@
 |
   sample_date:
     attributeName: sample_date
-    attributeDefinition: ''
+    attributeDefinition: 'survey date'
     propertyURI: ''
     propertyLabel: ''
     valueURI: ''
@@ -10,7 +10,7 @@
     formatString: YYYY-MM-DD
   site_code:
     attributeName: site_code
-    attributeDefinition: ''
+    attributeDefinition: 'location code'
     propertyURI: ''
     propertyLabel: ''
     valueURI: ''
@@ -19,7 +19,7 @@
     definition: ''
   parcel_survey_type:
     attributeName: parcel_survey_type
-    attributeDefinition: ''
+    attributeDefinition: 'indicating the yard (front or back of the residence) where the survey was conducted'
     propertyURI: ''
     propertyLabel: ''
     valueURI: ''
@@ -27,7 +27,7 @@
     columnClasses: factor
   residence_type:
     attributeName: residence_type
-    attributeDefinition: ''
+    attributeDefinition: 'type of residence'
     propertyURI: ''
     propertyLabel: ''
     valueURI: ''
@@ -36,7 +36,7 @@
     definition: ''
   parcel_social_class:
     attributeName: parcel_social_class
-    attributeDefinition: ''
+    attributeDefinition: 'approximate (perceived) social class of the surrounding area'
     propertyURI: ''
     propertyLabel: ''
     valueURI: ''
@@ -44,7 +44,7 @@
     columnClasses: factor
   parcel_appearance:
     attributeName: parcel_appearance
-    attributeDefinition: ''
+    attributeDefinition: 'general appearance of the yard'
     propertyURI: ''
     propertyLabel: ''
     valueURI: ''
@@ -52,7 +52,7 @@
     columnClasses: factor
   parcel_orderliness:
     attributeName: parcel_orderliness
-    attributeDefinition: ''
+    attributeDefinition: 'yard orderliness (placement of plants; riverbed; etc.)'
     propertyURI: ''
     propertyLabel: ''
     valueURI: ''
@@ -60,7 +60,7 @@
     columnClasses: factor
   presence_of_bird_feeder:
     attributeName: presence_of_bird_feeder
-    attributeDefinition: ''
+    attributeDefinition: 'presence of a bird feeder'
     propertyURI: ''
     propertyLabel: ''
     valueURI: ''
@@ -68,7 +68,7 @@
     columnClasses: factor
   presence_of_water_feature:
     attributeName: presence_of_water_feature
-    attributeDefinition: ''
+    attributeDefinition: 'presence of a water feature'
     propertyURI: ''
     propertyLabel: ''
     valueURI: ''
@@ -76,7 +76,7 @@
     columnClasses: factor
   presence_of_porch_patio:
     attributeName: presence_of_porch_patio
-    attributeDefinition: ''
+    attributeDefinition: 'presence of a porch or patio'
     propertyURI: ''
     propertyLabel: ''
     valueURI: ''
@@ -84,7 +84,7 @@
     columnClasses: factor
   presence_of_cats:
     attributeName: presence_of_cats
-    attributeDefinition: ''
+    attributeDefinition: 'presence of a cat'
     propertyURI: ''
     propertyLabel: ''
     valueURI: ''
@@ -92,7 +92,7 @@
     columnClasses: factor
   presence_of_dogs:
     attributeName: presence_of_dogs
-    attributeDefinition: ''
+    attributeDefinition: 'presence of a dog'
     propertyURI: ''
     propertyLabel: ''
     valueURI: ''
@@ -100,7 +100,7 @@
     columnClasses: factor
   presence_of_pet_waste:
     attributeName: presence_of_pet_waste
-    attributeDefinition: ''
+    attributeDefinition: 'presence of pet waste'
     propertyURI: ''
     propertyLabel: ''
     valueURI: ''
@@ -108,7 +108,7 @@
     columnClasses: factor
   presence_of_statues:
     attributeName: presence_of_statues
-    attributeDefinition: ''
+    attributeDefinition: 'presence of a bird feeder'
     propertyURI: ''
     propertyLabel: ''
     valueURI: ''
@@ -116,7 +116,7 @@
     columnClasses: factor
   presence_of_flagpole:
     attributeName: presence_of_flagpole
-    attributeDefinition: ''
+    attributeDefinition: 'presence of a flag pole'
     propertyURI: ''
     propertyLabel: ''
     valueURI: ''
@@ -124,7 +124,7 @@
     columnClasses: factor
   presence_of_cars_yard:
     attributeName: presence_of_cars_yard
-    attributeDefinition: ''
+    attributeDefinition: 'presence of cars in the yard'
     propertyURI: ''
     propertyLabel: ''
     valueURI: ''
@@ -132,7 +132,7 @@
     columnClasses: factor
   presence_of_potted_plant:
     attributeName: presence_of_potted_plant
-    attributeDefinition: ''
+    attributeDefinition: 'presence of a potted plant(s)'
     propertyURI: ''
     propertyLabel: ''
     valueURI: ''
@@ -140,7 +140,7 @@
     columnClasses: factor
   presence_of_play_equip:
     attributeName: presence_of_play_equip
-    attributeDefinition: ''
+    attributeDefinition: 'presence of play equipment'
     propertyURI: ''
     propertyLabel: ''
     valueURI: ''
@@ -148,7 +148,7 @@
     columnClasses: factor
   presence_of_lawn_ornaments:
     attributeName: presence_of_lawn_ornaments
-    attributeDefinition: ''
+    attributeDefinition: 'presence of lawn ornament(s)'
     propertyURI: ''
     propertyLabel: ''
     valueURI: ''
@@ -156,7 +156,7 @@
     columnClasses: factor
   presence_of_furniture:
     attributeName: presence_of_furniture
-    attributeDefinition: ''
+    attributeDefinition: 'presence of furniture (chairs; tables)'
     propertyURI: ''
     propertyLabel: ''
     valueURI: ''
@@ -164,7 +164,7 @@
     columnClasses: factor
   presence_of_river_bed:
     attributeName: presence_of_river_bed
-    attributeDefinition: ''
+    attributeDefinition: 'presence of a landscaped rock river'
     propertyURI: ''
     propertyLabel: ''
     valueURI: ''
@@ -172,7 +172,7 @@
     columnClasses: factor
   presence_of_yard_topography:
     attributeName: presence_of_yard_topography
-    attributeDefinition: ''
+    attributeDefinition: 'created yard topography'
     propertyURI: ''
     propertyLabel: ''
     valueURI: ''
@@ -180,7 +180,7 @@
     columnClasses: factor
   presence_of_litter:
     attributeName: presence_of_litter
-    attributeDefinition: ''
+    attributeDefinition: 'presence of litter (refuse on ground)'
     propertyURI: ''
     propertyLabel: ''
     valueURI: ''
@@ -188,7 +188,7 @@
     columnClasses: factor
   presence_of_veg_litter:
     attributeName: presence_of_veg_litter
-    attributeDefinition: ''
+    attributeDefinition: 'presence of vegetation litter (e.g. leaves)'
     propertyURI: ''
     propertyLabel: ''
     valueURI: ''
@@ -196,7 +196,7 @@
     columnClasses: factor
   presence_of_yard_tools:
     attributeName: presence_of_yard_tools
-    attributeDefinition: ''
+    attributeDefinition: 'presence of yard tools'
     propertyURI: ''
     propertyLabel: ''
     valueURI: ''
@@ -204,7 +204,7 @@
     columnClasses: factor
   presence_of_light_post:
     attributeName: presence_of_light_post
-    attributeDefinition: ''
+    attributeDefinition: 'presence of a light post'
     propertyURI: ''
     propertyLabel: ''
     valueURI: ''
@@ -212,7 +212,7 @@
     columnClasses: factor
   presence_of_other:
     attributeName: presence_of_other
-    attributeDefinition: ''
+    attributeDefinition: 'presence of other'
     propertyURI: ''
     propertyLabel: ''
     valueURI: ''
@@ -220,7 +220,7 @@
     columnClasses: factor
   presence_of_irrigation_flood:
     attributeName: presence_of_irrigation_flood
-    attributeDefinition: ''
+    attributeDefinition: 'indication of flood irrigation'
     propertyURI: ''
     propertyLabel: ''
     valueURI: ''
@@ -228,7 +228,7 @@
     columnClasses: factor
   presence_of_irrigation_drip:
     attributeName: presence_of_irrigation_drip
-    attributeDefinition: ''
+    attributeDefinition: 'indication of drip irrigation'
     propertyURI: ''
     propertyLabel: ''
     valueURI: ''
@@ -236,7 +236,7 @@
     columnClasses: factor
   presence_of_irrigation_hose:
     attributeName: presence_of_irrigation_hose
-    attributeDefinition: ''
+    attributeDefinition: 'indication of hose irrigation'
     propertyURI: ''
     propertyLabel: ''
     valueURI: ''
@@ -244,7 +244,7 @@
     columnClasses: factor
   presence_of_irrigation_sprinklers:
     attributeName: presence_of_irrigation_sprinklers
-    attributeDefinition: ''
+    attributeDefinition: 'indication of sprinkler irrigation'
     propertyURI: ''
     propertyLabel: ''
     valueURI: ''
@@ -252,7 +252,7 @@
     columnClasses: factor
   landscape_type:
     attributeName: landscape_type
-    attributeDefinition: ''
+    attributeDefinition: 'landscape type'
     propertyURI: ''
     propertyLabel: ''
     valueURI: ''
@@ -260,7 +260,7 @@
     columnClasses: factor
   amount_grass:
     attributeName: amount_grass
-    attributeDefinition: ''
+    attributeDefinition: 'amount of yard covered by grass'
     propertyURI: ''
     propertyLabel: ''
     valueURI: ''
@@ -268,7 +268,7 @@
     columnClasses: factor
   weed_quantity_mesic:
     attributeName: weed_quantity_mesic
-    attributeDefinition: ''
+    attributeDefinition: 'density of weeds in the grassy area'
     propertyURI: ''
     propertyLabel: ''
     valueURI: ''
@@ -276,7 +276,7 @@
     columnClasses: factor
   weed_quantity_xeric:
     attributeName: weed_quantity_xeric
-    attributeDefinition: ''
+    attributeDefinition: 'density of weeds in the non-grassy area'
     propertyURI: ''
     propertyLabel: ''
     valueURI: ''
@@ -284,7 +284,7 @@
     columnClasses: factor
   presence_of_weeds_other:
     attributeName: presence_of_weeds_other
-    attributeDefinition: ''
+    attributeDefinition: 'are there weeds in other area of the yard (e.g. flower beds; driveway; etc.)'
     propertyURI: ''
     propertyLabel: ''
     valueURI: ''
@@ -292,7 +292,7 @@
     columnClasses: factor
   parcel_pruning_trees:
     attributeName: parcel_pruning_trees
-    attributeDefinition: ''
+    attributeDefinition: 'indication of pruning trees (e.g. cut branches)'
     propertyURI: ''
     propertyLabel: ''
     valueURI: ''
@@ -300,7 +300,7 @@
     columnClasses: factor
   parcel_pruning_shrubs:
     attributeName: parcel_pruning_shrubs
-    attributeDefinition: ''
+    attributeDefinition: 'indication of pruning shrubs (e.g. shaped shrubs)'
     propertyURI: ''
     propertyLabel: ''
     valueURI: ''
@@ -308,7 +308,7 @@
     columnClasses: factor
   parcel_grass_patchiness:
     attributeName: parcel_grass_patchiness
-    attributeDefinition: ''
+    attributeDefinition: 'patchiness of grass'
     propertyURI: ''
     propertyLabel: ''
     valueURI: ''
@@ -316,127 +316,127 @@
     columnClasses: factor
   parcel_percent_living_grass:
     attributeName: parcel_percent_living_grass
-    attributeDefinition: ''
+    attributeDefinition: 'estimated area (as percent) of living grass in grassy area of yard'
     propertyURI: ''
     propertyLabel: ''
     valueURI: ''
     valueLabel: ''
-    unit: ''
+    unit: 'PERCENT'
     numberType: whole
     minimum: 0
     maximum: 100
     columnClasses: numeric
   parcel_percent_bare:
     attributeName: parcel_percent_bare
-    attributeDefinition: ''
+    attributeDefinition: 'estimated area (as percent) of bare ground in grassy area of yard'
     propertyURI: ''
     propertyLabel: ''
     valueURI: ''
     valueLabel: ''
-    unit: ''
+    unit: 'PERCENT'
     numberType: whole
     minimum: 0
     maximum: 100
     columnClasses: numeric
   parcel_percent_dead:
     attributeName: parcel_percent_dead
-    attributeDefinition: ''
+    attributeDefinition: 'estimated area (as percent) of dead grass in grassy area of yard'
     propertyURI: ''
     propertyLabel: ''
     valueURI: ''
     valueLabel: ''
-    unit: ''
+    unit: 'PERCENT'
     numberType: whole
     minimum: 0
     maximum: 90
     columnClasses: numeric
   parcel_percent_weeds:
     attributeName: parcel_percent_weeds
-    attributeDefinition: ''
+    attributeDefinition: 'estimated area (as percent) of weeds in grassy area of yard'
     propertyURI: ''
     propertyLabel: ''
     valueURI: ''
     valueLabel: ''
-    unit: ''
+    unit: 'PERCENT'
     numberType: whole
     minimum: 0
     maximum: 10100
     columnClasses: numeric
   parcel_percent_other:
     attributeName: parcel_percent_other
-    attributeDefinition: ''
+    attributeDefinition: 'estimated area (as percent) of other in grassy area of yard'
     propertyURI: ''
     propertyLabel: ''
     valueURI: ''
     valueLabel: ''
-    unit: ''
+    unit: 'PERCENT'
     numberType: whole
     minimum: 0
     maximum: 95
     columnClasses: numeric
   parcel_percent_no_stress:
     attributeName: parcel_percent_no_stress
-    attributeDefinition: ''
+    attributeDefinition: 'percent of living grass in grassy area of yard that is very green (no stress)'
     propertyURI: ''
     propertyLabel: ''
     valueURI: ''
     valueLabel: ''
-    unit: ''
+    unit: 'PERCENT'
     numberType: whole
     minimum: 0
     maximum: 1003333
     columnClasses: numeric
   parcel_percent_little_stress:
     attributeName: parcel_percent_little_stress
-    attributeDefinition: ''
+    attributeDefinition: 'percent of living grass in grassy area of yard that is moderately green (little stress)'
     propertyURI: ''
     propertyLabel: ''
     valueURI: ''
     valueLabel: ''
-    unit: ''
+    unit: 'PERCENT'
     numberType: whole
     minimum: 0
     maximum: 1005
     columnClasses: numeric
   parcel_percent_some_stress:
     attributeName: parcel_percent_some_stress
-    attributeDefinition: ''
+    attributeDefinition: 'percent of living grass in grassy area of yard that is greenish-yellow (some stress)'
     propertyURI: ''
     propertyLabel: ''
     valueURI: ''
     valueLabel: ''
-    unit: ''
+    unit: 'PERCENT'
     numberType: whole
     minimum: 0
     maximum: 100
     columnClasses: numeric
   parcel_percent_moderate_stress:
     attributeName: parcel_percent_moderate_stress
-    attributeDefinition: ''
+    attributeDefinition: 'percent of living grass in grassy area of yard that is yellowish (moderate stress)'
     propertyURI: ''
     propertyLabel: ''
     valueURI: ''
     valueLabel: ''
-    unit: ''
+    unit: 'PERCENT'
     numberType: whole
     minimum: 0
     maximum: 100
     columnClasses: numeric
   parcel_percent_severe_stress:
     attributeName: parcel_percent_severe_stress
-    attributeDefinition: ''
+    attributeDefinition: 'percent of living grass in grassy area of yard that is brownish (severe stress)'
     propertyURI: ''
     propertyLabel: ''
     valueURI: ''
     valueLabel: ''
-    unit: ''
+    unit: 'PERCENT'
     numberType: whole
     minimum: 0
     maximum: 50
     columnClasses: numeric
   lawn_health:
     attributeName: lawn_health
-    attributeDefinition: ''
+    attributeDefinition: 'overall lawn health and color'
     propertyURI: ''
     propertyLabel: ''
     valueURI: ''
@@ -444,7 +444,7 @@
     columnClasses: factor
   lawn_quality:
     attributeName: lawn_quality
-    attributeDefinition: ''
+    attributeDefinition: 'overall lawn quality'
     propertyURI: ''
     propertyLabel: ''
     valueURI: ''
@@ -452,7 +452,7 @@
     columnClasses: factor
   presence_of_lawn_trimmed:
     attributeName: presence_of_lawn_trimmed
-    attributeDefinition: ''
+    attributeDefinition: 'are the lawn edges trimmed?'
     propertyURI: ''
     propertyLabel: ''
     valueURI: ''
@@ -460,7 +460,7 @@
     columnClasses: factor
   presence_of_recent_cut:
     attributeName: presence_of_recent_cut
-    attributeDefinition: ''
+    attributeDefinition: 'was the lawn recently mowed?'
     propertyURI: ''
     propertyLabel: ''
     valueURI: ''
@@ -473,7 +473,7 @@
     propertyLabel: ''
     valueURI: ''
     valueLabel: ''
-    unit: ''
+    unit: 'CentiM'
     numberType: whole
     minimum: 0
     maximum: 30
@@ -485,14 +485,14 @@
     propertyLabel: ''
     valueURI: ''
     valueLabel: ''
-    unit: ''
+    unit: 'CentiM'
     numberType: whole
     minimum: 0
     maximum: 100
     columnClasses: numeric
   parcel_feature_comments:
     attributeName: parcel_feature_comments
-    attributeDefinition: ''
+    attributeDefinition: 'general observations or comments'
     propertyURI: ''
     propertyLabel: ''
     valueURI: ''

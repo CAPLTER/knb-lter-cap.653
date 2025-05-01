@@ -1,7 +1,7 @@
 |
   site_code:
     attributeName: site_code
-    attributeDefinition: ''
+    attributeDefinition: 'location code'
     propertyURI: ''
     propertyLabel: ''
     valueURI: ''
@@ -10,7 +10,7 @@
     definition: ''
   sample_date:
     attributeName: sample_date
-    attributeDefinition: ''
+    attributeDefinition: 'survey date'
     propertyURI: ''
     propertyLabel: ''
     valueURI: ''
@@ -19,7 +19,7 @@
     formatString: YYYY-MM-DD
   vegetation_scientific_name:
     attributeName: vegetation_scientific_name
-    attributeDefinition: ''
+    attributeDefinition: 'scientific name of plant'
     propertyURI: ''
     propertyLabel: ''
     valueURI: ''
@@ -36,7 +36,7 @@
     columnClasses: factor
   number_plants:
     attributeName: number_plants
-    attributeDefinition: ''
+    attributeDefinition: 'number of plants of this type'
     propertyURI: ''
     propertyLabel: ''
     valueURI: ''

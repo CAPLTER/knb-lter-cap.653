@@ -1,7 +1,7 @@
 |
   sample_date:
     attributeName: sample_date
-    attributeDefinition: ''
+    attributeDefinition: 'survey date'
     propertyURI: ''
     propertyLabel: ''
     valueURI: ''
@@ -10,40 +10,7 @@
     formatString: YYYY-MM-DD
   site_code:
     attributeName: site_code
-    attributeDefinition: ''
-    propertyURI: ''
-    propertyLabel: ''
-    valueURI: ''
-    valueLabel: ''
-    columnClasses: character
-    definition: ''
-  elevation:
-    attributeName: elevation
-    attributeDefinition: ''
-    propertyURI: ''
-    propertyLabel: ''
-    valueURI: ''
-    valueLabel: ''
-    unit: ''
-    numberType: natural
-    minimum: 277.0
-    maximum: 722.0
-    columnClasses: numeric
-  slope:
-    attributeName: slope
-    attributeDefinition: ''
-    propertyURI: ''
-    propertyLabel: ''
-    valueURI: ''
-    valueLabel: ''
-    unit: ''
-    numberType: natural
-    minimum: .inf
-    maximum: -.inf
-    columnClasses: numeric
-  aspect:
-    attributeName: aspect
-    attributeDefinition: ''
+    attributeDefinition: 'location code'
     propertyURI: ''
     propertyLabel: ''
     valueURI: ''
@@ -52,7 +19,7 @@
     definition: ''
   weather_on_the_day:
     attributeName: weather_on_the_day
-    attributeDefinition: ''
+    attributeDefinition: 'general description of weather on the day of sampling'
     propertyURI: ''
     propertyLabel: ''
     valueURI: ''
@@ -61,7 +28,7 @@
     definition: ''
   weather_recent_rain_notes:
     attributeName: weather_recent_rain_notes
-    attributeDefinition: ''
+    attributeDefinition: 'notes relating to evidence of recent rain at the parcel'
     propertyURI: ''
     propertyLabel: ''
     valueURI: ''
@@ -70,7 +37,7 @@
     definition: ''
   general_description:
     attributeName: general_description
-    attributeDefinition: ''
+    attributeDefinition: 'general description of the survey parcel'
     propertyURI: ''
     propertyLabel: ''
     valueURI: ''
