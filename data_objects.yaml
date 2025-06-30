@@ -1,0 +1,63 @@
+parcel_characteristics:
+  type: table
+  dfname: parcel_characteristics 
+  description: "General characteristics concerning the appearance, health, and presence of specific attributes of the parcel yard. The front and back yards of the parcel are surveyed independently."
+  dateRangeField: "sample_date"
+  overwrite: TRUE
+  projectNaming: TRUE
+  missingValueCode: ~
+  additional_information: ~
+landscape_irrigation:
+  type: table
+  dfname: landscape_irrigation
+  description: "Characteristics reflective of the landscape type, health, and quality in the parcel yard."
+  dateRangeField: "sample_date"
+  overwrite: TRUE
+  projectNaming: TRUE
+  missingValueCode: ~
+  additional_information: ~
+trees:
+  type: table
+  dfname: trees
+  description: "Size and characteristics of trees and Saguaros (Carnegiea gigantea) within parcels. These data also reflect the total number of trees and Saguaros in the parcel, and the location of the plant in the front versus back yard is not distinguished. An exception to this is seedlings, where trees less than 1 meter in height are simply counted (and not measured); counts of these plants are available in the number_perennials data that is part of this data set."
+  dateRangeField: "sample_date"
+  overwrite: TRUE
+  projectNaming: TRUE
+  missingValueCode: ~
+  additional_information: ~
+number_perennials:
+  type: table
+  dfname: number_perennials
+  description: "The number of perennial plants in the parcel, except Saguaros and mature trees, the numbers of which are available in the trees data that are part of this data set."
+  dateRangeField: "sample_date"
+  overwrite: TRUE
+  projectNaming: TRUE
+  missingValueCode: ~
+  additional_information: ~
+landuse:
+  type: table
+  dfname: landuse
+  description: "Estimated land use or land cover in the parcel. Parcels may consist of multiple land use or land cover types, with the approximate percentage of each estimated. Land use or land cover types/labels are adapted from land use/land cover designations employed by the Maricopa County Association of Governments."
+  dateRangeField: "sample_date"
+  overwrite: TRUE
+  projectNaming: TRUE
+  missingValueCode: ~
+  additional_information: ~
+neighborhood_characteristics:
+  type: table
+  dfname: neighborhood_characteristics
+  description: "General characteristics, such as those relating to perceived social class, types of buildings (if present), landscape quality and features, and traffic of the immediate area surrounding the parcel."
+  dateRangeField: "~"
+  overwrite: TRUE
+  projectNaming: TRUE
+  missingValueCode: ~
+  additional_information: ~
+sampling_events:
+  type: table
+  dfname: sampling_events
+  description: "Date of survey and general characteristics of the parcel, including the elevation, slope, a description of the plot, and a description of weather on the date of sampling."
+  dateRangeField: "sample_date"
+  overwrite: TRUE
+  projectNaming: TRUE
+  missingValueCode: ~
+  additional_information: ~

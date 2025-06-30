@@ -17,9 +17,33 @@
     valueLabel: ''
     columnClasses: character
     definition: ''
-  neigh_social_class:
-    attributeName: neigh_social_class
+  neigh_social_class_poor:
+    attributeName: neigh_social_class_poor
     attributeDefinition: 'perceived poor neighborhood'
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    columnClasses: factor
+  neigh_social_class_rich:
+    attributeName: neigh_social_class_rich
+    attributeDefinition: 'perceived wealthy neighborhood'
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    columnClasses: factor
+  neigh_social_class_upper_middle:
+    attributeName: neigh_social_class_upper_middle
+    attributeDefinition: 'perceived upper middle class neighborhood'
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    columnClasses: factor
+  neigh_social_class_working_lower:
+    attributeName: neigh_social_class_working_lower
+    attributeDefinition: 'perceived working lower class neighborhood'
     propertyURI: ''
     propertyLabel: ''
     valueURI: ''
@@ -136,8 +160,7 @@
     propertyLabel: ''
     valueURI: ''
     valueLabel: ''
-    columnClasses: character
-    definition: ''
+    columnClasses: factor
   neigh_landscape_mixed:
     attributeName: neigh_landscape_mixed
     attributeDefinition: 'mixed (mesic; xeric) landscaping in neighborhood'
@@ -145,8 +168,7 @@
     propertyLabel: ''
     valueURI: ''
     valueLabel: ''
-    columnClasses: character
-    definition: ''
+    columnClasses: factor
   neigh_landscape_xeric:
     attributeName: neigh_landscape_xeric
     attributeDefinition: 'xeric landscaping in neighborhood'
@@ -154,8 +176,7 @@
     propertyLabel: ''
     valueURI: ''
     valueLabel: ''
-    columnClasses: character
-    definition: ''
+    columnClasses: factor
   neigh_landscape_turf_present:
     attributeName: neigh_landscape_turf_present
     attributeDefinition: 'turf present in neighborhood'
@@ -171,8 +192,7 @@
     propertyLabel: ''
     valueURI: ''
     valueLabel: ''
-    columnClasses: character
-    definition: ''
+    columnClasses: factor
   neigh_traffic_cul_de_sac:
     attributeName: neigh_traffic_cul_de_sac
     attributeDefinition: 'cul de sac in neighborhood'
@@ -180,8 +200,7 @@
     propertyLabel: ''
     valueURI: ''
     valueLabel: ''
-    columnClasses: character
-    definition: ''
+    columnClasses: factor
   neigh_traffic_dirt_road:
     attributeName: neigh_traffic_dirt_road
     attributeDefinition: 'dirt road(s) in neighborhood'
@@ -189,8 +208,7 @@
     propertyLabel: ''
     valueURI: ''
     valueLabel: ''
-    columnClasses: character
-    definition: ''
+    columnClasses: factor
   neigh_traffic_freeway_expressway:
     attributeName: neigh_traffic_freeway_expressway
     attributeDefinition: 'freeway or expressway in neighborhood'
@@ -198,8 +216,7 @@
     propertyLabel: ''
     valueURI: ''
     valueLabel: ''
-    columnClasses: character
-    definition: ''
+    columnClasses: factor
   neigh_traffic_highway:
     attributeName: neigh_traffic_highway
     attributeDefinition: 'highway in neighborhood'
@@ -207,8 +224,7 @@
     propertyLabel: ''
     valueURI: ''
     valueLabel: ''
-    columnClasses: character
-    definition: ''
+    columnClasses: factor
   neigh_traffic_major_city_road:
     attributeName: neigh_traffic_major_city_road
     attributeDefinition: 'major city road(s) in neighborhood'
@@ -216,8 +232,7 @@
     propertyLabel: ''
     valueURI: ''
     valueLabel: ''
-    columnClasses: character
-    definition: ''
+    columnClasses: factor
   neigh_traffic_none:
     attributeName: neigh_traffic_none
     attributeDefinition: 'no road(s) in neighborhood'
@@ -225,8 +240,7 @@
     propertyLabel: ''
     valueURI: ''
     valueLabel: ''
-    columnClasses: character
-    definition: ''
+    columnClasses: factor
   neigh_traffic_paved_local_street:
     attributeName: neigh_traffic_paved_local_street
     attributeDefinition: 'pavel local street(s) in neighborhood'
@@ -234,8 +248,7 @@
     propertyLabel: ''
     valueURI: ''
     valueLabel: ''
-    columnClasses: character
-    definition: ''
+    columnClasses: factor
   neigh_notes:
     attributeName: neigh_notes
     attributeDefinition: 'general notes about the neighborhood'

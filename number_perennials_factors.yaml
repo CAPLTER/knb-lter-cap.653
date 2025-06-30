@@ -7,4 +7,4 @@
       - code: pa_front
         definition: 'front of the parcel (the frontyard)' 
       - code: parcel
-        definition: 'observation is within the parcel but specific location is not distinguished'
+        definition: 'observation is within the parcel but front- versus back-yard is not distinguished'

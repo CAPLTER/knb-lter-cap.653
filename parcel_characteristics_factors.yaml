@@ -9,16 +9,14 @@
   - attribute:
       attributeName: parcel_social_class
       levels:
+      - code: middle
+        definition: 'perceived as being of middle class'
       - code: rich
-        definition: 'rich'
-      - code: upper middle
-        definition: 'upper middle'
-      - code: upper middle class
-        definition: 'upper middle class'
-      - code: working lower
-        definition: 'working lower'
-      - code: working lower class
-        definition: 'working lower class'
+        definition: 'perceived as being of rich or wealthy'
+      - code: upper_middle
+        definition: 'perceived as being of upper middle class'
+      - code: working_lower
+        definition: 'perceived as being of working or lower class' 
   - attribute:
       attributeName: parcel_appearance
       levels:

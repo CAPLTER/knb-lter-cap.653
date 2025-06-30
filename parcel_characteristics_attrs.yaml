@@ -36,7 +36,7 @@
     definition: ''
   parcel_social_class:
     attributeName: parcel_social_class
-    attributeDefinition: 'approximate (perceived) social class of the surrounding area'
+    attributeDefinition: 'Approximate (perceived) social class of the parcel. This parameter is assesed twice - once each for the front and back yards. These values should almost always be congruent but may differ due to observer bias or a sincere assessment that the front and back yards each convey different social classes.'
     propertyURI: ''
     propertyLabel: ''
     valueURI: ''
@@ -468,7 +468,7 @@
     columnClasses: factor
   parcel_grass_height:
     attributeName: parcel_grass_height
-    attributeDefinition: ''
+    attributeDefinition: 'height of grass'
     propertyURI: ''
     propertyLabel: ''
     valueURI: ''
@@ -480,7 +480,7 @@
     columnClasses: numeric
   parcel_weed_height:
     attributeName: parcel_weed_height
-    attributeDefinition: ''
+    attributeDefinition: 'height of weeds'
     propertyURI: ''
     propertyLabel: ''
     valueURI: ''

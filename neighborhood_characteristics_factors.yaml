@@ -1,30 +1,13 @@
 |
   - attribute:
-      attributeName: neigh_social_class_poor
+      attributeName: neigh_social_class
       levels:
-      - code: 'FALSE'
-        definition: 'FALSE'
-  - attribute:
-      attributeName: neigh_social_class_rich
-      levels:
-      - code: 'FALSE'
-        definition: 'FALSE'
-      - code: 'TRUE'
-        definition: 'TRUE'
-  - attribute:
-      attributeName: neigh_social_class_upper_middle
-      levels:
-      - code: 'FALSE'
-        definition: 'FALSE'
-      - code: 'TRUE'
-        definition: 'TRUE'
-  - attribute:
-      attributeName: neigh_social_class_working_lower
-      levels:
-      - code: 'FALSE'
-        definition: 'FALSE'
-      - code: 'TRUE'
-        definition: 'TRUE'
+      - code: rich
+        definition: 'perceived as being of rich or wealthy'
+      - code: upper_middle
+        definition: 'perceived as being of upper middle class'
+      - code: working_lower
+        definition: 'perceived as being of working or lower class' 
   - attribute:
       attributeName: neigh_buildings_residential
       levels:
@@ -103,84 +86,7 @@
       - code: 'TRUE'
         definition: 'TRUE'
   - attribute:
-      attributeName: neigh_landscape_mesic
-      levels:
-      - code: 'FALSE'
-        definition: 'FALSE'
-      - code: 'TRUE'
-        definition: 'TRUE'
-  - attribute:
-      attributeName: neigh_landscape_mixed
-      levels:
-      - code: 'FALSE'
-        definition: 'FALSE'
-      - code: 'TRUE'
-        definition: 'TRUE'
-  - attribute:
-      attributeName: neigh_landscape_xeric
-      levels:
-      - code: 'FALSE'
-        definition: 'FALSE'
-      - code: 'TRUE'
-        definition: 'TRUE'
-  - attribute:
       attributeName: neigh_landscape_turf_present
-      levels:
-      - code: 'FALSE'
-        definition: 'FALSE'
-      - code: 'TRUE'
-        definition: 'TRUE'
-  - attribute:
-      attributeName: neigh_traffic_collector_street
-      levels:
-      - code: 'FALSE'
-        definition: 'FALSE'
-      - code: 'TRUE'
-        definition: 'TRUE'
-  - attribute:
-      attributeName: neigh_traffic_cul_de_sac
-      levels:
-      - code: 'FALSE'
-        definition: 'FALSE'
-      - code: 'TRUE'
-        definition: 'TRUE'
-  - attribute:
-      attributeName: neigh_traffic_dirt_road
-      levels:
-      - code: 'FALSE'
-        definition: 'FALSE'
-      - code: 'TRUE'
-        definition: 'TRUE'
-  - attribute:
-      attributeName: neigh_traffic_freeway_expressway
-      levels:
-      - code: 'FALSE'
-        definition: 'FALSE'
-      - code: 'TRUE'
-        definition: 'TRUE'
-  - attribute:
-      attributeName: neigh_traffic_highway
-      levels:
-      - code: 'FALSE'
-        definition: 'FALSE'
-      - code: 'TRUE'
-        definition: 'TRUE'
-  - attribute:
-      attributeName: neigh_traffic_major_city_road
-      levels:
-      - code: 'FALSE'
-        definition: 'FALSE'
-      - code: 'TRUE'
-        definition: 'TRUE'
-  - attribute:
-      attributeName: neigh_traffic_none
-      levels:
-      - code: 'FALSE'
-        definition: 'FALSE'
-      - code: 'TRUE'
-        definition: 'TRUE'
-  - attribute:
-      attributeName: neigh_traffic_paved_local_street
       levels:
       - code: 'FALSE'
         definition: 'FALSE'

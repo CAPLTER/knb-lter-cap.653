@@ -33,7 +33,7 @@
       attributeName: canopy_condition
       levels:
       - code: critical
-        definition: critical
+        definition:critical 
       - code: excellent
         definition: excellent
       - code: fair

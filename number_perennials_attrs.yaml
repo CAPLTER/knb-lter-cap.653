@@ -26,14 +26,6 @@
     valueLabel: ''
     columnClasses: character
     definition: ''
-  plant_count_type_code:
-    attributeName: plant_count_type_code
-    attributeDefinition: ''
-    propertyURI: ''
-    propertyLabel: ''
-    valueURI: ''
-    valueLabel: ''
-    columnClasses: factor
   number_plants:
     attributeName: number_plants
     attributeDefinition: 'number of plants of this type'
@@ -41,8 +33,16 @@
     propertyLabel: ''
     valueURI: ''
     valueLabel: ''
-    unit: ''
+    unit: 'NUM'
     numberType: natural
     minimum: 1.0
     maximum: 302.0
     columnClasses: numeric
+  plant_count_type_code:
+    attributeName: plant_count_type_code
+    attributeDefinition: 'location of the plant within the parcel'
+    propertyURI: ''
+    propertyLabel: ''
+    valueURI: ''
+    valueLabel: ''
+    columnClasses: factor

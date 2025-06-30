@@ -1,0 +1,8 @@
+|
+  - attribute:
+      attributeName: structure_use
+      levels:
+      - code: model
+        definition: 'model home'
+      - code: residential
+        definition: 'residence'

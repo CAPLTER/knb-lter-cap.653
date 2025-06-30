@@ -17,24 +17,12 @@
     valueLabel: ''
     columnClasses: character
     definition: ''
-  landuse_label:
-    attributeName: landuse_label
-    attributeDefinition: 'land use or land cover description'
+  structure_use:
+    attributeName: structure_use
+    attributeDefinition: 'type or use of structure'
     propertyURI: ''
     propertyLabel: ''
     valueURI: ''
     valueLabel: ''
     columnClasses: character
     definition: ''
-  landuse_percent:
-    attributeName: landuse_percent
-    attributeDefinition: 'estimated percent of parcel covered by category'
-    propertyURI: ''
-    propertyLabel: ''
-    valueURI: ''
-    valueLabel: ''
-    unit: 'PERCENT'
-    numberType: natural
-    minimum: 10
-    maximum: 100
-    columnClasses: numeric

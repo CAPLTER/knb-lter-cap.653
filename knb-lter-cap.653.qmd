@@ -2,13 +2,6 @@
 
 ```{r}
 #| eval: true
-#| label: capeml
-
-devtools::load_all("~/localRepos/capeml/")
-```
-
-```{r}
-#| eval: true
 #| label: connection
 
 source("~/Documents/localSettings/pg_local.R")
@@ -17,9 +10,10 @@ pg <- pg_local_connect("caplter")
 
 ```{r}
 #| eval: true
-#| label: queries
+#| label: resources
 
 source("~/localRepos/knb-lter-cap.652/esca_sql_queries.R")
+source("~/localRepos/knb-lter-cap.652/esca_sites_grid.R")
 ```
 
 
@@ -34,14 +28,8 @@ parcel_characteristics <- get_parcel_characteristics("parcel")
 parcel_characteristics <- parcel_characteristics |>
   dplyr::mutate(
     parcel_survey_type                = as.factor(parcel_survey_type),
-    # parcel_residence_type           = gsub("single_family", "single family", parcel_residence_type),
-    # parcel_residence_type           = gsub("single familiy", "single family", parcel_residence_type),
     parcel_social_class               = as.factor(parcel_social_class),
-    # parcel_appearance               = gsub("neigh_yard_upkeep_good", "good", parcel_appearance),
-    # parcel_appearance               = gsub("neigh_yard_upkeep_poor", "poor", parcel_appearance),
     parcel_appearance                 = as.factor(parcel_appearance),
-    # parcel_orderliness              = gsub("lacking_order_structure", "lacking order or structure", parcel_orderliness),
-    # parcel_orderliness              = gsub("highly_structured_designed", "highly structured or designed", parcel_orderliness),
     parcel_orderliness                = as.factor(parcel_orderliness),
     presence_of_bird_feeder           = as.factor(presence_of_bird_feeder),
     presence_of_water_feature         = as.factor(presence_of_water_feature),
@@ -89,40 +77,6 @@ try({
 ```
 
 
-## human indicators
-
-```{r}
-#| eval: TRUE
-#| label: human_indicators
-
-human_indicators <- get_human_indicators("parcel")
-
-human_indicators <- human_indicators |> 
-  dplyr::mutate(
-    human_presence_of_path    = as.factor(human_presence_of_path),
-    human_footprints          = as.factor(human_footprints),
-    human_bike_tracks         = as.factor(human_bike_tracks),
-    human_off_road_vehicle    = as.factor(human_off_road_vehicle),
-    human_small_litter        = as.factor(human_small_litter),
-    human_dumped_trash_bags   = as.factor(human_dumped_trash_bags),
-    human_abandoned_vehicles  = as.factor(human_abandoned_vehicles),
-    human_graffiti            = as.factor(human_graffiti),
-    human_injured_plants      = as.factor(human_injured_plants),
-    human_informal_play       = as.factor(human_informal_play),
-    human_informal_recreation = as.factor(human_informal_recreation),
-    human_informal_living     = as.factor(human_informal_living),
-    human_sports_equipment    = as.factor(human_sports_equipment),
-    human_social_class        = as.factor(human_social_class)
-  )
-
-try({
-  capeml::write_attributes(human_indicators, overwrite = FALSE)
-  capeml::write_factors(human_indicators, overwrite = FALSE)
-})
-
-```
-
-
 ## landscape irrigation
 
 ```{r}
@@ -131,55 +85,36 @@ try({
 
 landscape_irrigation <- get_landscape_irrigation("parcel")
 
-landscape_irrigation <- landscape_irrigation |> 
+landscape_irrigation <- landscape_irrigation |>
   dplyr::mutate(
-    appears_maintained               = as.factor(appears_maintained),
-    appears_professional            = as.factor(appears_professional),
-    appears_healthy                 = as.factor(appears_healthy),
-    appears_injured                 = as.factor(appears_injured),
-    presence_of_open_ground         = as.factor(presence_of_open_ground),
-    presence_of_trees               = as.factor(presence_of_trees),
-    presence_of_shrubs              = as.factor(presence_of_shrubs),
-    presence_of_cacti_succ          = as.factor(presence_of_cacti_succ),
-    presence_of_lawn                = as.factor(presence_of_lawn),
-    presence_of_herbaceous_ground   = as.factor(presence_of_herbaceous_ground),
-    presence_of_other               = as.factor(presence_of_other),
-    presence_of_hand_water          = as.factor(presence_of_hand_water),
-    presence_of_drip_water          = as.factor(presence_of_drip_water),
-    presence_of_overhead_water      = as.factor(presence_of_overhead_water),
-    presence_of_flood_water         = as.factor(presence_of_flood_water),
-    presence_of_subterranean_water  = as.factor(presence_of_subterranean_water), # only NAs throwing off function so need to do by hand
-    presence_of_no_water            = as.factor(presence_of_no_water),
-    presence_of_pervious_irrigation = as.factor(presence_of_pervious_irrigation)
+    dplyr::across(
+      c(
+        appears_maintained,
+        appears_professional,
+        appears_healthy,
+        appears_injured,
+        presence_of_open_ground,
+        presence_of_trees,
+        presence_of_shrubs,
+        presence_of_cacti_succ,
+        presence_of_lawn,
+        presence_of_herbaceous_ground,
+        presence_of_other,
+        presence_of_hand_water,
+        presence_of_drip_water,
+        presence_of_overhead_water,
+        presence_of_flood_water,
+        presence_of_subterranean_water,
+        presence_of_no_water,
+        presence_of_pervious_irrigation
+      ),
+      ~ if (all(is.na(.x))) .x else as.factor(.x)
+    )
   )
 
 try({
   capeml::write_attributes(landscape_irrigation, overwrite = FALSE)
   capeml::write_factors(landscape_irrigation, overwrite = FALSE)
-})
-
-```
-
-
-## shrubs cacti succulents 
-
-Parcel shrubs are only counted (not surveyed). There are a few records of
-surveyed shrubs from 2010 but those the only data of this type.
-
-```{r}
-#| eval: FALSE
-#| label: shrubs_cacti_succulents 
-
-shrubs_cacti_succulents <- get_shrubs_cacti_succulents("parcel") |> 
-  # dplyr::select(-year) |> 
-  dplyr::mutate(
-    vegetation_shape_code          = as.factor(vegetation_shape_code),
-    vegetation_classification_code = as.factor(vegetation_classification_code)
-  )
-
-try({
-  capeml::write_attributes(shrubs_cacti_succulents, overwrite = FALSE)
-  capeml::write_factors(shrubs_cacti_succulents, overwrite = FALSE)
 })
 
 ```
@@ -225,30 +160,23 @@ try({
 
 ```{r}
 #| eval: TRUE
-#| label: number perennials
+#| label: number-perennials
 
 number_perennials <- DBI::dbGetQuery(
   conn      = pg,
   statement = "
   WITH count_sums AS (
-    SELECT
-      sampling_events.survey_id,
-      vegetation_samples.vegetation_taxon_id,
-      cv_plant_count_survey_types.plant_count_type_id,
-      SUM(vegetation_survey_plant_counts.count_survey_value) AS number_plants
-    FROM
-      survey200.vegetation_survey_plant_counts
-    JOIN survey200.vegetation_samples ON (vegetation_survey_plant_counts.vegetation_sample_id = vegetation_samples.vegetation_sample_id)
-    JOIN survey200.sampling_events_vegetation_samples ON (vegetation_samples.vegetation_sample_id = sampling_events_vegetation_samples.vegetation_sample_id)
-    JOIN survey200.sampling_events ON (sampling_events_vegetation_samples.survey_id = sampling_events.survey_id)
-    JOIN survey200.cv_plant_count_survey_types ON (cv_plant_count_survey_types.plant_count_type_id = vegetation_survey_plant_counts.plant_count_type_id)
-    WHERE
-    cv_plant_count_survey_types.plant_count_type_id IN (
-      5,
-      6,
-      10
-    )
-    GROUP BY
+  SELECT
+    sampling_events.survey_id,
+    vegetation_samples.vegetation_taxon_id,
+    cv_plant_count_survey_types.plant_count_type_id,
+    SUM(vegetation_survey_plant_counts.count_survey_value) AS number_plants
+  FROM survey200.vegetation_survey_plant_counts
+  JOIN survey200.vegetation_samples ON (vegetation_survey_plant_counts.vegetation_sample_id = vegetation_samples.vegetation_sample_id)
+  JOIN survey200.sampling_events_vegetation_samples ON (vegetation_samples.vegetation_sample_id = sampling_events_vegetation_samples.vegetation_sample_id)
+  JOIN survey200.sampling_events ON (sampling_events_vegetation_samples.survey_id = sampling_events.survey_id)
+  JOIN survey200.cv_plant_count_survey_types ON (cv_plant_count_survey_types.plant_count_type_id = vegetation_survey_plant_counts.plant_count_type_id)
+  GROUP BY
     sampling_events.survey_id,
     vegetation_samples.vegetation_taxon_id,
     cv_plant_count_survey_types.plant_count_type_id
@@ -257,8 +185,8 @@ number_perennials <- DBI::dbGetQuery(
     sites.site_code,
     sampling_events.samp_date AS sample_date,
     vegetation_taxon_list.vegetation_scientific_name,
-    cv_plant_count_survey_types.plant_count_type_code,
-    count_sums.number_plants
+    count_sums.number_plants,
+    cv_plant_count_survey_types.plant_count_type_code
   FROM count_sums
   JOIN survey200.sampling_events ON (sampling_events.survey_id = count_sums.survey_id)
   JOIN survey200.sites ON (sites.site_id = sampling_events.site_id)
@@ -269,7 +197,8 @@ number_perennials <- DBI::dbGetQuery(
     count_sums.number_plants > 0
   ORDER BY
     EXTRACT (YEAR FROM sampling_events.samp_date),
-    sites.site_code
+    sites.site_code,
+    count_sums.number_plants DESC
   ;
 "
 )
@@ -288,7 +217,7 @@ try({
 #| eval: FALSE
 #| label: hedges 
 
-still no parcel hedges as of 2023
+still, there are not any parcel hedges as of 2023
 
 # hedges <- get_hedges('parcel') %>% 
 #   mutate(
@@ -306,13 +235,9 @@ still no parcel hedges as of 2023
 #| eval: TRUE
 #| label: landuse 
 
-landuse <- get_landuse('parcel')
+landuse <- get_landuse("parcel")
 
-
-try({
-  capeml::write_attributes(landuse, overwrite = FALSE)
-  capeml::write_factors(landuse, overwrite = FALSE)
-})
+try({capeml::write_attributes(landuse, overwrite = FALSE)})
 
 ```
 
@@ -323,37 +248,39 @@ try({
 #| eval: TRUE
 #| label: neighborhood_characteristics 
 
-neighborhood_characteristics <- get_neighborhood_characteristics("parcel") |> 
+neighborhood_characteristics <- get_neighborhood_characteristics("parcel") |>
   dplyr::mutate(
-    neigh_social_class_poor                     = as.factor(neigh_social_class_poor),
-    neigh_social_class_rich                     = as.factor(neigh_social_class_rich),
-    neigh_social_class_upper_middle             = as.factor(neigh_social_class_upper_middle),
-    neigh_social_class_working_lower            = as.factor(neigh_social_class_working_lower),
-    neigh_buildings_residential                 = as.factor(neigh_buildings_residential),
-    neigh_buildings_commercial                  = as.factor(neigh_buildings_commercial),
-    neigh_buildings_institutional               = as.factor(neigh_buildings_institutional),
-    neigh_buildings_industrial                  = as.factor(neigh_buildings_industrial),
-    neigh_residence_apartments                  = as.factor(neigh_residence_apartments),
-    neigh_residence_multi_family                = as.factor(neigh_residence_multi_family),
-    neigh_residence_single_family               = as.factor(neigh_residence_single_family),
-    neigh_irrigation_drip_trickle               = as.factor(neigh_irrigation_drip_trickle),
-    neigh_irrigation_flood_hand                 = as.factor(neigh_irrigation_flood_hand),
-    neigh_irrigation_overhead_spray             = as.factor(neigh_irrigation_overhead_spray),
-    neigh_yard_upkeep_good                      = as.factor(neigh_yard_upkeep_good),
-    neigh_yard_upkeep_poor                      = as.factor(neigh_yard_upkeep_poor),
-    neigh_yard_upkeep_professionally_maintained = as.factor(neigh_yard_upkeep_professionally_maintained),
-    neigh_landscape_mesic                       = as.factor(neigh_landscape_mesic),
-    neigh_landscape_mixed                       = as.factor(neigh_landscape_mixed),
-    neigh_landscape_xeric                       = as.factor(neigh_landscape_xeric),
-    neigh_landscape_turf_present                = as.factor(neigh_landscape_turf_present),
-    neigh_traffic_collector_street              = as.factor(neigh_traffic_collector_street),
-    neigh_traffic_cul_de_sac                    = as.factor(neigh_traffic_cul_de_sac),
-    neigh_traffic_dirt_road                     = as.factor(neigh_traffic_dirt_road),
-    neigh_traffic_freeway_expressway            = as.factor(neigh_traffic_freeway_expressway),
-    neigh_traffic_highway                       = as.factor(neigh_traffic_highway),
-    neigh_traffic_major_city_road               = as.factor(neigh_traffic_major_city_road),
-    neigh_traffic_none                          = as.factor(neigh_traffic_none),
-    neigh_traffic_paved_local_street            = as.factor(neigh_traffic_paved_local_street)
+    dplyr::across(
+      c(
+        neigh_social_class,
+        neigh_buildings_residential,
+        neigh_buildings_commercial,
+        neigh_buildings_institutional,
+        neigh_buildings_industrial,
+        neigh_residence_apartments,
+        neigh_residence_multi_family,
+        neigh_residence_single_family,
+        neigh_irrigation_drip_trickle,
+        neigh_irrigation_flood_hand,
+        neigh_irrigation_overhead_spray,
+        neigh_yard_upkeep_good,
+        neigh_yard_upkeep_poor,
+        neigh_yard_upkeep_professionally_maintained,
+        neigh_landscape_mesic,
+        neigh_landscape_mixed,
+        neigh_landscape_xeric,
+        neigh_landscape_turf_present,
+        neigh_traffic_collector_street,
+        neigh_traffic_cul_de_sac,
+        neigh_traffic_dirt_road,
+        neigh_traffic_freeway_expressway,
+        neigh_traffic_highway,
+        neigh_traffic_major_city_road,
+        neigh_traffic_none,
+        neigh_traffic_paved_local_street
+      ),
+      ~ if (all(is.na(.x))) as.character(.x) else as.factor(.x)
+    )
   )
 
 try({
@@ -399,13 +326,12 @@ try({
 #| eval: TRUE
 #| label: sampling_events
 
-sampling_events_base_query <- "
+sampling_events <- DBI::dbGetQuery(
+  conn      = pg,
+  statement = "
   SELECT
     sampling_events.samp_date AS sample_date,
     sites.site_code,
-    -- sites.elevation,
-    -- sites_geography.slope,
-    -- sites_geography.aspect,
     hi.weather_on_the_day,
     hi.weather_recent_rain_notes,
     hi.general_description
@@ -420,16 +346,9 @@ sampling_events_base_query <- "
     sites.site_code
     ;
     "
-
-sampling_events <- DBI::dbGetQuery(
-  conn      = pg,
-  statement = sampling_events_base_query
 )
 
-try({
-  capeml::write_attributes(sampling_events, overwrite = FALSE)
-  # capeml::write_factors(sampling_events, overwrite = FALSE)
-})
+try({capeml::write_attributes(sampling_events, overwrite = FALSE)})
 
 ```
 
@@ -440,15 +359,54 @@ try({
 #| eval: TRUE
 #| label: coverages
 
+cells_with_parcels <- cells_with_points |>
+  dplyr::filter(site_code %in% sampling_events$site_code)
+
 coverage <- EML::set_coverage(
   begin                 = as.character(as.Date(min(sampling_events$sample_date))),
   end                   = as.character(as.Date(max(sampling_events$sample_date))),
-  geographicDescription = capeml::read_package_configuration()[["geographic_description"]],
-  west                  = -112.783,
-  east                  = -111.579,
-  north                 = 33.8267,
-  south                 = 33.2186
+  geographicDescription = capeml::read_package_configuration()[[
+    "geographic_description"
+  ]],
+  west                  = sf::st_bbox(cells_with_parcels)[["xmin"]],
+  east                  = sf::st_bbox(cells_with_parcels)[["xmax"]],
+  north                 = sf::st_bbox(cells_with_parcels)[["ymax"]],
+  south                 = sf::st_bbox(cells_with_parcels)[["ymin"]]
 )
+
+```
+
+## taxonomic coverage
+
+```{r}
+#| eval: TRUE
+#| label: taxonomic-coverage
+
+my_path <- getwd()
+
+taxa <- dplyr::bind_rows(
+  trees |>
+    dplyr::distinct(vegetation_scientific_name),
+  number_perennials |>
+    dplyr::distinct(vegetation_scientific_name)
+) |>
+  as.data.frame()
+
+taxonomyCleanr::create_taxa_map(
+  path = my_path,
+  x    = taxa,
+  col  = "vegetation_scientific_name"
+)
+
+taxonomyCleanr::resolve_sci_taxa(
+  path         = my_path,
+  data.sources = c(3, 11)
+)
+
+taxaCoverage <- taxonomyCleanr::make_taxonomicCoverage(path = my_path)
+
+coverage$taxonomicCoverage <- taxaCoverage
+
 ```
 
 
@@ -457,8 +415,6 @@ coverage <- EML::set_coverage(
 ```{r}
 #| eval: TRUE
 #| label: build
-
-# devtools::load_all("~/localRepos/capeml")
 
 dataset <- capeml::create_dataset()
 eml     <- capeml::create_eml()
@@ -482,4 +438,5 @@ xml2::write_xml(report, "/tmp/report.xml")
 capeml::create_package(environment = "staging")
 
 EDIutils::logout()
+
 ```
