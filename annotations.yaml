@@ -1,0 +1,120 @@
+- name: PERCENT
+  valueLabel: Percent
+  valueURI: http://qudt.org/vocab/unit/PERCENT
+  references: 33bd7ac68aa3f8e6a85e0e5ab76c4d31_40
+  propertyLabel: has unit
+  propertyURI: http://qudt.org/schema/qudt/hasUnit
+- name: PERCENT
+  valueLabel: Percent
+  valueURI: http://qudt.org/vocab/unit/PERCENT
+  references: 33bd7ac68aa3f8e6a85e0e5ab76c4d31_41
+  propertyLabel: has unit
+  propertyURI: http://qudt.org/schema/qudt/hasUnit
+- name: PERCENT
+  valueLabel: Percent
+  valueURI: http://qudt.org/vocab/unit/PERCENT
+  references: 33bd7ac68aa3f8e6a85e0e5ab76c4d31_42
+  propertyLabel: has unit
+  propertyURI: http://qudt.org/schema/qudt/hasUnit
+- name: PERCENT
+  valueLabel: Percent
+  valueURI: http://qudt.org/vocab/unit/PERCENT
+  references: 33bd7ac68aa3f8e6a85e0e5ab76c4d31_43
+  propertyLabel: has unit
+  propertyURI: http://qudt.org/schema/qudt/hasUnit
+- name: PERCENT
+  valueLabel: Percent
+  valueURI: http://qudt.org/vocab/unit/PERCENT
+  references: 33bd7ac68aa3f8e6a85e0e5ab76c4d31_44
+  propertyLabel: has unit
+  propertyURI: http://qudt.org/schema/qudt/hasUnit
+- name: PERCENT
+  valueLabel: Percent
+  valueURI: http://qudt.org/vocab/unit/PERCENT
+  references: 33bd7ac68aa3f8e6a85e0e5ab76c4d31_45
+  propertyLabel: has unit
+  propertyURI: http://qudt.org/schema/qudt/hasUnit
+- name: PERCENT
+  valueLabel: Percent
+  valueURI: http://qudt.org/vocab/unit/PERCENT
+  references: 33bd7ac68aa3f8e6a85e0e5ab76c4d31_46
+  propertyLabel: has unit
+  propertyURI: http://qudt.org/schema/qudt/hasUnit
+- name: PERCENT
+  valueLabel: Percent
+  valueURI: http://qudt.org/vocab/unit/PERCENT
+  references: 33bd7ac68aa3f8e6a85e0e5ab76c4d31_47
+  propertyLabel: has unit
+  propertyURI: http://qudt.org/schema/qudt/hasUnit
+- name: PERCENT
+  valueLabel: Percent
+  valueURI: http://qudt.org/vocab/unit/PERCENT
+  references: 33bd7ac68aa3f8e6a85e0e5ab76c4d31_48
+  propertyLabel: has unit
+  propertyURI: http://qudt.org/schema/qudt/hasUnit
+- name: PERCENT
+  valueLabel: Percent
+  valueURI: http://qudt.org/vocab/unit/PERCENT
+  references: 33bd7ac68aa3f8e6a85e0e5ab76c4d31_49
+  propertyLabel: has unit
+  propertyURI: http://qudt.org/schema/qudt/hasUnit
+- name: CentiM
+  valueLabel: Centimeter
+  valueURI: http://qudt.org/vocab/unit/CentiM
+  references: 33bd7ac68aa3f8e6a85e0e5ab76c4d31_54
+  propertyLabel: has unit
+  propertyURI: http://qudt.org/schema/qudt/hasUnit
+- name: CentiM
+  valueLabel: Centimeter
+  valueURI: http://qudt.org/vocab/unit/CentiM
+  references: 33bd7ac68aa3f8e6a85e0e5ab76c4d31_55
+  propertyLabel: has unit
+  propertyURI: http://qudt.org/schema/qudt/hasUnit
+- name: NUM
+  valueLabel: Number
+  valueURI: http://qudt.org/vocab/unit/NUM
+  references: bce2604bd182714e41d8fd3206e91e67_11
+  propertyLabel: has unit
+  propertyURI: http://qudt.org/schema/qudt/hasUnit
+- name: PERCENT
+  valueLabel: Percent
+  valueURI: http://qudt.org/vocab/unit/PERCENT
+  references: bce2604bd182714e41d8fd3206e91e67_12
+  propertyLabel: has unit
+  propertyURI: http://qudt.org/schema/qudt/hasUnit
+- name: M
+  valueLabel: Meter
+  valueURI: http://qudt.org/vocab/unit/M
+  references: bce2604bd182714e41d8fd3206e91e67_6
+  propertyLabel: has unit
+  propertyURI: http://qudt.org/schema/qudt/hasUnit
+- name: M
+  valueLabel: Meter
+  valueURI: http://qudt.org/vocab/unit/M
+  references: bce2604bd182714e41d8fd3206e91e67_7
+  propertyLabel: has unit
+  propertyURI: http://qudt.org/schema/qudt/hasUnit
+- name: M
+  valueLabel: Meter
+  valueURI: http://qudt.org/vocab/unit/M
+  references: bce2604bd182714e41d8fd3206e91e67_8
+  propertyLabel: has unit
+  propertyURI: http://qudt.org/schema/qudt/hasUnit
+- name: CentiM
+  valueLabel: Centimeter
+  valueURI: http://qudt.org/vocab/unit/CentiM
+  references: bce2604bd182714e41d8fd3206e91e67_9
+  propertyLabel: has unit
+  propertyURI: http://qudt.org/schema/qudt/hasUnit
+- name: NUM
+  valueLabel: Number
+  valueURI: http://qudt.org/vocab/unit/NUM
+  references: beda4fd4f8d5304bb5b0ae025978cdca_4
+  propertyLabel: has unit
+  propertyURI: http://qudt.org/schema/qudt/hasUnit
+- name: PERCENT
+  valueLabel: Percent
+  valueURI: http://qudt.org/vocab/unit/PERCENT
+  references: 8ec754a98a1672fc206dcb2d2bbda56d_4
+  propertyLabel: has unit
+  propertyURI: http://qudt.org/schema/qudt/hasUnit

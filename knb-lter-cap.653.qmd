@@ -6,6 +6,7 @@
 
 source("~/Documents/localSettings/pg_local.R")
 pg <- pg_local_connect("caplter")
+
 ```
 
 ```{r}
@@ -14,6 +15,7 @@ pg <- pg_local_connect("caplter")
 
 source("~/localRepos/knb-lter-cap.652/esca_sql_queries.R")
 source("~/localRepos/knb-lter-cap.652/esca_sites_grid.R")
+
 ```
 
 
@@ -217,7 +219,7 @@ try({
 #| eval: FALSE
 #| label: hedges 
 
-still, there are not any parcel hedges as of 2023
+still, there are not any parcel hedges as of the 2021 survey
 
 # hedges <- get_hedges('parcel') %>% 
 #   mutate(
@@ -382,8 +384,6 @@ coverage <- EML::set_coverage(
 #| eval: TRUE
 #| label: taxonomic-coverage
 
-my_path <- getwd()
-
 taxa <- dplyr::bind_rows(
   trees |>
     dplyr::distinct(vegetation_scientific_name),
@@ -392,18 +392,12 @@ taxa <- dplyr::bind_rows(
 ) |>
   as.data.frame()
 
-taxonomyCleanr::create_taxa_map(
-  path = my_path,
-  x    = taxa,
-  col  = "vegetation_scientific_name"
+capeml::write_taxa_map(
+  taxa_df  = taxa,
+  taxa_col = vegetation_scientific_name
 )
 
-taxonomyCleanr::resolve_sci_taxa(
-  path         = my_path,
-  data.sources = c(3, 11)
-)
-
-taxaCoverage <- taxonomyCleanr::make_taxonomicCoverage(path = my_path)
+taxaCoverage <- capeml::create_taxonomicCoverage()
 
 coverage$taxonomicCoverage <- taxaCoverage
 
@@ -435,8 +429,21 @@ capeml::get_package_evaluation(full_report = FALSE)
 report <- capeml::get_package_evaluation(full_report = TRUE)
 xml2::write_xml(report, "/tmp/report.xml")
 
-capeml::create_package(environment = "staging")
+capeml::create_package(environment = "production")
 
 EDIutils::logout()
+
+```
+
+
+## clean
+
+```{r}
+#| eval: TRUE
+#| label: clean
+
+file.remove(c(list.files(pattern = "^653_")))
+capeml::eml_to_amz(list.files(pattern = "knb.+xml"))
+file.copy(list.files(pattern = "knb.+xml"), "/home/srearl/localRepos/cap-metadata/cap-data-eml/")
 
 ```

@@ -36,5 +36,3 @@ vignettes/*.pdf
 # project specific
 knb-lter-cap\.653\.\d\.xml
 ^653_.*
-annotations.yaml
-custom_units.yaml
